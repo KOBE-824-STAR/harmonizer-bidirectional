@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SOURCE_PACKAGING",
+  "python_ast_files": 317,
+  "original_implementation_hashes": "ALL_MATCH",
+  "cpu_module_tests": {
+    "passed": 9,
+    "seconds": 9.026,
+    "gpu_used": false
+  },
+  "entrypoint_help": "configure / inference / restore PASS",
+  "trained_checkpoint_expected_sha256": "706a25a84a8ec7b61038a4b30ef48069d4d33c23d409741764f7c2230745390d",
+  "training_manifest_sha256": "3c9617092d0453f88a5196d22738f49686b603e8d9238679bccd34aea07251a7",
+  "gpu_portability_test": "NOT_RUN; no new GPU workload started",
+  "portable_config_recipe_check": "PASS: training, exchange and implementation provenance unchanged",
+  "full_release_restore": "PASS: all parts reassembled, all full-file and underlying base-weight checksums verified"
+}
