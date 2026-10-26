@@ -1,5 +1,5 @@
 {
-  "scope": "Initial source snapshot before Release attachment manifest; excludes itself and future release manifest",
+  "scope": "Versioned source, configuration and provenance files; excludes itself and all binary Release assets",
   "files": {
     ".gitignore": {
       "bytes": 127,
@@ -8,6 +8,10 @@
     "LICENSE": {
       "bytes": 11357,
       "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    "PACKAGING_VALIDATION.json": {
+      "bytes": 759,
+      "sha256": "5c2360ac9c7b6f0b6be1c8fd800bf32a4ef1a7783a4cf017e113861e1b492b51"
     },
     "README.md": {
       "bytes": 4786,
@@ -44,6 +48,46 @@
     "configs/injection_one_way.json": {
       "bytes": 10654,
       "sha256": "2499d0698c3e5f0b22f5ed53ff609b6ee113327ee9e15403268ace333490d736"
+    },
+    "docs/original/DESIGN.md": {
+      "bytes": 19163,
+      "sha256": "be580b962da7b4e4d7774e62ea344978e0b87565f2640cb36f358dfaacffa304"
+    },
+    "docs/original/EVALUATION.md": {
+      "bytes": 7097,
+      "sha256": "ef16cc031ff4296e030fd1b739b78a046fd8838f71d6996ccaf2185e7ba2290a"
+    },
+    "docs/original/IMPLEMENTATION.md": {
+      "bytes": 16001,
+      "sha256": "e271b784d30d924fdadc849d5f7bfe495bdb289facc95636ea689e9d6768e7d8"
+    },
+    "docs/original/INFORMATION_INJECTION.md": {
+      "bytes": 10708,
+      "sha256": "a93169658fe3c28c6b680deaf49ff13d2d443e8b665ad832471c666c2a59600e"
+    },
+    "docs/original/README.md": {
+      "bytes": 3137,
+      "sha256": "bc3c62344067ea5b4290ec62e1d0b47d48469ee236f0d30058414a9a3167485a"
+    },
+    "docs/original/README_ARCHIVE.md": {
+      "bytes": 237,
+      "sha256": "c5816deae7c74e8bf9a3a32ddff279e32bafc83767ece2899539373302a04f0d"
+    },
+    "docs/original/RUNNING.md": {
+      "bytes": 8336,
+      "sha256": "2e9d824de5a05b2f6fe462808c97b1acb64ea08a0833f2902b9875fad34337c0"
+    },
+    "docs/original/SIXCAM_VALIDATION.md": {
+      "bytes": 6414,
+      "sha256": "1083f651e7ea452e397e922d3433a4e14b19fbdfff530f4c790b266526792cb4"
+    },
+    "docs/original/TANHE_RUNTIME.md": {
+      "bytes": 7012,
+      "sha256": "994b86e2764646034bef331779233b79b38cb517898b98f31ca31a8759865e3a"
+    },
+    "docs/original/TRAINING_REFERENCE.md": {
+      "bytes": 5135,
+      "sha256": "3249dd054d340f1cc5b91b295052f686b6c3c56c8dc18b8a03cc32ad4075702b"
     },
     "double_dit/__init__.py": {
       "bytes": 76,
@@ -84,6 +128,10 @@
     "double_dit/sixcam_contract.py": {
       "bytes": 3791,
       "sha256": "282f35ad9d396f7475ecd229ff41cc449b6a248964101b8a4455e9515bc6b621"
+    },
+    "release_manifest.json": {
+      "bytes": 3849,
+      "sha256": "d7827c3582619e268367b87959af23a9ec1957d7df491af5f3109118dfe4dfc2"
     },
     "runtime/tanhe/requirements_resolved.txt": {
       "bytes": 3267,
@@ -1356,6 +1404,198 @@
     "whole_data/runs/training_restart_20261024/bidirectional/config.json": {
       "bytes": 14111,
       "sha256": "dde382745782d249096fa1d4d973ea3763de086e1b9d989baaa796554befb095"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank0/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank0/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank0/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank0/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank0/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank0/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "32513fb655543f00eea763a38bc105a3249e0ab3a7af96c5566b3bbc6e920ada"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank1/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank1/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank1/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank1/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank1/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank1/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "34d04c17d65c8739501dcebfb915c7cbdfdf6b3c644268c82a71ee6a0b0ba533"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank2/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank2/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank2/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank2/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank2/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank2/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "b5cc7943e48e4cff9e34af81ad1c77d1addaa787e1165b700f0be7cb78d9ed58"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank3/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank3/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank3/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank3/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank3/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank3/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "db1589f773e3010888193dc6f7966be719e7aeebc2421f25a2ae05e36f60b3c7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank4/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank4/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank4/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank4/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank4/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank4/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "1511144ae662d29fb631818dfa49e2a3b27448c15cb9d0fe6288f3e438a9ff2a"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank5/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank5/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank5/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank5/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank5/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank5/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "d0df3eacc1e6431a2e00a3681378c650d4d0cdd26d6b63098bc962c404dbacb2"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank6/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank6/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank6/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank6/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank6/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank6/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "ffed94884dfdfc311092f70a8d52df04d4b55bdb91187e691b1c8ebac4d0ab5c"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank7/gradient_step1.json": {
+      "bytes": 2613,
+      "sha256": "18a40841f5d7d369507c707d4cc4989718c98397f7e5c830472f6af49a4ce498"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank7/gradient_step2.json": {
+      "bytes": 2616,
+      "sha256": "72841aad33d9d0af0bd0908a0063c747ea6fc059b802badbda065de5b05118e7"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank7/gradient_step3.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank7/gradient_step4.json": {
+      "bytes": 2618,
+      "sha256": "e8d10a5c54ffac99d2e783a8c0d37627b0f344024bd19950a499afe0994ed9ab"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank7/official_load.json": {
+      "bytes": 4486,
+      "sha256": "b1b9349ff2d05a816d8e1960ebd74994b5c6ad58dbeb01c35f761c38864118d6"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/rank7/parameter_scope.json": {
+      "bytes": 58470,
+      "sha256": "c0c4d24d4c28c23151b1cb17ad4313dfd91274835342afc49447e00a93dd7f53"
     },
     "whole_data/runs/training_restart_20261024/bidirectional/train.log": {
       "bytes": 570734,

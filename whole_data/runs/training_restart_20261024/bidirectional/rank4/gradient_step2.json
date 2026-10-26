@@ -1,0 +1,152 @@
+{
+  "main_other": {
+    "with_gradient": 7,
+    "nonzero": 7,
+    "finite": true
+  },
+  "main_block_0": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_1": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_2": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_3": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_4": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_5": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_6": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_7": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_8": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_9": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_10": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_11": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_12": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_13": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_14": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_15": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_16": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_17": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_18": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "main_block_19": {
+    "with_gradient": 20,
+    "nonzero": 12,
+    "finite": true
+  },
+  "vae_encoder": {
+    "with_gradient": 80,
+    "nonzero": 80,
+    "finite": true
+  },
+  "vae": {
+    "with_gradient": 4,
+    "nonzero": 4,
+    "finite": true
+  },
+  "vae_decoder": {
+    "with_gradient": 102,
+    "nonzero": 102,
+    "finite": true
+  },
+  "condition": {
+    "with_gradient": 404,
+    "nonzero": 244,
+    "finite": true
+  },
+  "read_m": {
+    "with_gradient": 55,
+    "nonzero": 55,
+    "finite": true
+  },
+  "read_s": {
+    "with_gradient": 44,
+    "nonzero": 4,
+    "finite": true
+  },
+  "view_exchange": {
+    "with_gradient": 55,
+    "nonzero": 5,
+    "finite": true
+  },
+  "camera_embed": {
+    "with_gradient": 1,
+    "nonzero": 1,
+    "finite": true
+  },
+  "ray_embed": {
+    "with_gradient": 4,
+    "nonzero": 4,
+    "finite": true
+  }
+}
