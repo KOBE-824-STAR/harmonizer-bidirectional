@@ -12,5 +12,7 @@
   "training_manifest_sha256": "3c9617092d0453f88a5196d22738f49686b603e8d9238679bccd34aea07251a7",
   "gpu_portability_test": "NOT_RUN; no new GPU workload started",
   "portable_config_recipe_check": "PASS: training, exchange and implementation provenance unchanged",
-  "full_release_restore": "PASS: all parts reassembled, all full-file and underlying base-weight checksums verified"
+  "full_release_restore": "PASS: all parts reassembled, all full-file and underlying base-weight checksums verified",
+  "compressed_transport_restore": "PASS: gzip parts decoded, full checkpoint/base archive verified, all original base-weight hashes matched",
+  "compressed_restore_validation_root": "/tmp/harmonizer-compressed-restore-5whgycbv"
 }

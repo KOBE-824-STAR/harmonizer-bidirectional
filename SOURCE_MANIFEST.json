@@ -10,12 +10,12 @@
       "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
     },
     "PACKAGING_VALIDATION.json": {
-      "bytes": 759,
-      "sha256": "5c2360ac9c7b6f0b6be1c8fd800bf32a4ef1a7783a4cf017e113861e1b492b51"
+      "bytes": 988,
+      "sha256": "5fa5afeaeec07f15cbccbc66b8d52a29f95fd9004a482becb57cb9f3581d7471"
     },
     "README.md": {
-      "bytes": 4786,
-      "sha256": "cfc6a244b56ce6ec1027f05040aea9c8c62d6db766088305d39e8de323856a19"
+      "bytes": 4947,
+      "sha256": "90c070b8822a459e0eccc88c9c700253e586dde747c46bb64fcaf817c0a12d65"
     },
     "SOURCE_PROVENANCE.json": {
       "bytes": 592,
@@ -130,8 +130,8 @@
       "sha256": "282f35ad9d396f7475ecd229ff41cc449b6a248964101b8a4455e9515bc6b621"
     },
     "release_manifest.json": {
-      "bytes": 3849,
-      "sha256": "d7827c3582619e268367b87959af23a9ec1957d7df491af5f3109118dfe4dfc2"
+      "bytes": 57865,
+      "sha256": "41634303d9ad7f35e28d283540f8fc8d20815ff3a89745b396552621337407d0"
     },
     "runtime/tanhe/requirements_resolved.txt": {
       "bytes": 3267,
@@ -1310,8 +1310,8 @@
       "sha256": "f2354d08f693bbb4cc4bd6fa53627596c964d73b446a5b2eba842bad5e904079"
     },
     "scripts/restore_assets.py": {
-      "bytes": 2421,
-      "sha256": "1b7942bcc66e50378fabf0705a28faa33f5a99a0bfd1299cce180041730e9eb1"
+      "bytes": 2720,
+      "sha256": "8a2b32bb396285975b6303e11d0eb97d069952a091c294bc5ee41c74f78a0c1f"
     },
     "scripts/restore_tanhe_data.py": {
       "bytes": 2272,

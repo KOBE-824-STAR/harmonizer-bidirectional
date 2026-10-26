@@ -6,13 +6,13 @@
 
 ## 权重恢复
 
-权重保存在本仓库私有 Release `bidirectional-step1000`，未将大文件加入普通 Git 历史。下载该 Release 的全部附件到 `assets/`，运行：
+权重保存在本仓库私有 Release `bidirectional-step1000`，未将大文件加入普通 Git 历史。下载该 Release 的全部附件到 `assets/`（可用 `gh release download bidirectional-step1000 --repo KOBE-824-STAR/harmonizer-bidirectional --dir assets`），运行：
 
 ```bash
 python3 scripts/restore_assets.py --assets assets
 ```
 
-脚本先验证每份附件的 SHA256，再合并完整 checkpoint，并恢复基础模型和 LPIPS 权重。`weights/latest.pt` 是原完整 checkpoint：模型、optimizer、scheduler、每个 rank 的随机状态及数据顺序均保留。服务器原文件不改写。
+权重使用 gzip 压缩小分片；脚本先验证每份附件的 SHA256，再解压、合并完整 checkpoint，并恢复基础模型和 LPIPS 权重。`weights/latest.pt` 是原完整 checkpoint：模型、optimizer、scheduler、每个 rank 的随机状态及数据顺序均保留。服务器原文件不改写。
 
 基础初始化权重也保存在附件中，因为原模型构造器需要官方 Harmonizer、Cosmos DiT 和 tokenizer；这些权重的使用继续受上游许可约束。图像数据集不包含在仓库；附件只附训练/评测元数据清单。
 

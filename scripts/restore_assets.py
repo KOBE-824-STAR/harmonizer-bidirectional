@@ -1,5 +1,5 @@
 """Verify and restore private Release assets using the standard library only."""
-import argparse,hashlib,json,shutil,tarfile
+import argparse,gzip,hashlib,json,shutil,tarfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def sha(path):
@@ -15,10 +15,10 @@ def extract(path,dest):
    if not target.is_relative_to(base) or not (member.isfile() or member.isdir()):raise ValueError('Unsafe archive entry: '+member.name)
   archive.extractall(base)
 def main():
- p=argparse.ArgumentParser();p.add_argument('--assets',type=Path,required=True);p.add_argument('--manifest',type=Path,default=ROOT/'release_manifest.json');a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--assets',type=Path,required=True);p.add_argument('--manifest',type=Path,default=ROOT/'release_manifest.json');p.add_argument('--destination-root',type=Path,default=ROOT);a=p.parse_args();destination_root=a.destination_root.resolve()
  m=json.loads(a.manifest.read_text())
  for item in m['artifacts']:
-  target=ROOT/item['target'];target.parent.mkdir(parents=True,exist_ok=True)
+  target=destination_root/item['target'];target.parent.mkdir(parents=True,exist_ok=True)
   if target.exists():
    if target.stat().st_size!=item['bytes'] or sha(target)!=item['sha256']:raise ValueError('Existing output differs: '+str(target))
   else:
@@ -26,20 +26,21 @@ def main():
    for part in item['parts']:
     source=a.assets/part['file']
     if source.stat().st_size!=part['bytes'] or sha(source)!=part['sha256']:raise ValueError('Asset checksum mismatch: '+source.name)
-    sources.append(source)
+    sources.append((source,part))
    temp=target.with_suffix(target.suffix+'.restoring')
    with temp.open('xb') as out:
-    for source in sources:
-     with source.open('rb') as stream:shutil.copyfileobj(stream,out,8<<20)
+    for source,part in sources:
+     with (gzip.open(source,'rb') if part.get('encoding')=='gzip' else source.open('rb')) as stream:shutil.copyfileobj(stream,out,8<<20)
    if temp.stat().st_size!=item['bytes'] or sha(temp)!=item['sha256']:raise ValueError('Restored checksum mismatch: '+item['name'])
    temp.replace(target)
-  if item.get('extract_to'):extract(target,ROOT/item['extract_to'])
+  if item.get('extract_to'):extract(target,destination_root/item['extract_to'])
   print('VERIFIED',item['name'])
  for item in m['base_weight_files']:
-  path=ROOT/'weights'/item['path']
+  path=destination_root/'weights'/item['path']
   if path.stat().st_size!=item['bytes'] or sha(path)!=item['sha256']:raise ValueError('Base-weight checksum mismatch: '+item['path'])
- lpips=ROOT/'weights/runtime/tanhe/lpips_vgg_state.pt'
- destination=ROOT/'runtime/tanhe/lpips_vgg_state.pt'
+ lpips=destination_root/'weights/runtime/tanhe/lpips_vgg_state.pt'
+ destination=destination_root/'runtime/tanhe/lpips_vgg_state.pt'
+ destination.parent.mkdir(parents=True,exist_ok=True)
  if destination.exists():
   if sha(destination)!=sha(lpips):raise ValueError('Existing LPIPS weights differ')
  else:shutil.copy2(lpips,destination)
