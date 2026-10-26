@@ -1,0 +1,114 @@
+{
+  "repository": "KOBE-824-STAR/harmonizer-bidirectional",
+  "release_tag": "bidirectional-step1000",
+  "artifacts": [
+    {
+      "name": "latest.pt",
+      "target": "weights/latest.pt",
+      "bytes": 8057077455,
+      "sha256": "706a25a84a8ec7b61038a4b30ef48069d4d33c23d409741764f7c2230745390d",
+      "parts": [
+        {
+          "file": "latest.pt.part-000",
+          "bytes": 1610612736,
+          "sha256": "daaf937432865bf412ed8e59b58542fc1371f3aa21447788f7adf362f9e69f1e"
+        },
+        {
+          "file": "latest.pt.part-001",
+          "bytes": 1610612736,
+          "sha256": "4947b3e7b3c2044b4e9b0708e3f92f597e12d7f6ed7ac8a6481041530e85882d"
+        },
+        {
+          "file": "latest.pt.part-002",
+          "bytes": 1610612736,
+          "sha256": "6ad9682c48dd301a6cc35e0ce28707202243f7803d528cae31c14bde6e1a665a"
+        },
+        {
+          "file": "latest.pt.part-003",
+          "bytes": 1610612736,
+          "sha256": "71055cb25d216ee8a78b059d4e28d33121be1186dc1de9f2c36676fa8a37fcec"
+        },
+        {
+          "file": "latest.pt.part-004",
+          "bytes": 1610612736,
+          "sha256": "9ec593157c70993eb5ea6de55bbe564ba8b3cafb442066fa0d71c4a134cefca6"
+        },
+        {
+          "file": "latest.pt.part-005",
+          "bytes": 4013775,
+          "sha256": "8947ad02547fbaed790eeba45ae00ace86f8a10b39b02a2ed7add09e9f864aa9"
+        }
+      ]
+    },
+    {
+      "name": "base-weights.tar",
+      "target": "weights/base-weights.tar",
+      "bytes": 6803947520,
+      "sha256": "2a6cd197e6417d58143b7fd25d4efc169d45ec474725cd673c7a7179ca9a6d82",
+      "parts": [
+        {
+          "file": "base-weights.tar.part-000",
+          "bytes": 1610612736,
+          "sha256": "dcfc2c6cc87c621ca47d8ebda9940aa0f3f514559972c5230936181307eac6fa"
+        },
+        {
+          "file": "base-weights.tar.part-001",
+          "bytes": 1610612736,
+          "sha256": "5edbc3ac5579b3b56bdb7cec4cd33b826464d71c6f234da4257252eff19f0b56"
+        },
+        {
+          "file": "base-weights.tar.part-002",
+          "bytes": 1610612736,
+          "sha256": "bd672192ae2a0a1253c4e922a73fd075810f982fbb3bc04ec715748a80069665"
+        },
+        {
+          "file": "base-weights.tar.part-003",
+          "bytes": 1610612736,
+          "sha256": "c65a4867a521b4535bfc2908aa5219baeb9675e4f1265db591e8f59f17a253ec"
+        },
+        {
+          "file": "base-weights.tar.part-004",
+          "bytes": 361496576,
+          "sha256": "6788fda3ec08ba71cdce3df54bbf824b04383ae9feb1afa2502eec24515673e5"
+        }
+      ],
+      "extract_to": "weights"
+    },
+    {
+      "name": "data-manifests.tar.gz",
+      "target": "weights/data-manifests.tar.gz",
+      "bytes": 58195079,
+      "sha256": "443737c0d7c7790f130c5de1f6af37fb2cca50e2dd016eed7c900929fd353cdb",
+      "parts": [
+        {
+          "file": "data-manifests.tar.gz.part-000",
+          "bytes": 58195079,
+          "sha256": "443737c0d7c7790f130c5de1f6af37fb2cca50e2dd016eed7c900929fd353cdb"
+        }
+      ],
+      "extract_to": "data/manifests"
+    }
+  ],
+  "base_weight_files": [
+    {
+      "path": "models/diffusion_harmonizer.pkl",
+      "bytes": 5042242222,
+      "sha256": "6e65e9ec33019a49f7f0d15f81f5e089c2527e131bd5339d6a14f9b3531db524"
+    },
+    {
+      "path": "src/checkpoints/nvidia/Cosmos-Predict2-0.6B-Text2Image/model.pt",
+      "bytes": 1195209249,
+      "sha256": "566cf8b4eb8409a645cffc1f550974608170cc7ba2f5ba7a05a85adeb379029d"
+    },
+    {
+      "path": "src/checkpoints/nvidia/Cosmos-Predict2-0.6B-Text2Image/tokenizer/tokenizer.pth",
+      "bytes": 507609880,
+      "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+    },
+    {
+      "path": "runtime/tanhe/lpips_vgg_state.pt",
+      "bytes": 58874686,
+      "sha256": "fac6c870cd464e242a7013124b4f02ea5e1741f583c4bf46c6c0ef6087b3cb91"
+    }
+  ]
+}
