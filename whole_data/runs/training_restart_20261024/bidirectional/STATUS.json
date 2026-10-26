@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "uid": 1000,
+  "world_size": 8,
+  "step": 1000,
+  "total_steps": 1000,
+  "elapsed_seconds": 30668.065717523918,
+  "rank0_losses": [
+    {
+      "train_mse": 0.007588130421936512,
+      "train_perceptual_loss": 0.18328630924224854
+    },
+    {
+      "train_mse": 0.005647670943289995,
+      "train_perceptual_loss": 0.1603933870792389
+    }
+  ],
+  "gradient_norm": 0.1357421875,
+  "valid_images_this_update": 150,
+  "peak_memory_bytes": 17892099584,
+  "training_recipe_id": "harmonizer_official_joint_v2"
+}

@@ -1,0 +1,382 @@
+{
+  "schema_version": 2,
+  "status": "matched_whole_data_original_bidirectional_training",
+  "architecture": "double_dit_injection_bidirectional",
+  "training_enabled": true,
+  "inference_enabled": true,
+  "backbone": {
+    "family": "Cosmos-Predict2-0.6B-Text2Image",
+    "cosmos_checkpoint_dir": "/data/juziwei/hlk/harmonizer/src/checkpoints/nvidia/Cosmos-Predict2-0.6B-Text2Image",
+    "harmonizer_checkpoint": "/data/juziwei/hlk/harmonizer/models/diffusion_harmonizer.pkl",
+    "expected_harmonizer_sha256": "6e65e9ec33019a49f7f0d15f81f5e089c2527e131bd5339d6a14f9b3531db524",
+    "strict_official_load": true,
+    "main_initialization": "official_single_stream_no_t4_extension",
+    "num_blocks": 20,
+    "width": 1280,
+    "num_heads": 20,
+    "latent_channels": 16,
+    "patch_spatial": 2,
+    "patch_temporal": 1,
+    "preserve_official_preconditioning": true,
+    "output": "official_head_then_preconditioned_x0",
+    "extra_image_residual_head": false,
+    "add_random_noise": false,
+    "training_timestep": 250,
+    "inference_timestep": 250,
+    "training_timestep_source": "audited_official_training_command_and_forward"
+  },
+  "condition_stream": {
+    "num_blocks": 20,
+    "width": 1280,
+    "num_heads": 20,
+    "initialization": "independent_clone_of_loaded_official_blocks_and_required_embeddings",
+    "share_dit_weights": false,
+    "share_mutable_tokenizer_cache": false,
+    "source": "current_composite_images_only",
+    "rgb_temporal_length": 1,
+    "spatial_pool_factor_after_patch_embed": 2,
+    "position_coordinates": "original_grid_pool_centers",
+    "noise_condition": "same_c_noise_as_main",
+    "output_head": false,
+    "share_tokenizer_weights": true,
+    "tokenizer_trainability": "official_except_time_conv",
+    "gradient_source": "main_final_training_loss_only"
+  },
+  "exchange": {
+    "index_base": 0,
+    "condition_cross_view_after_blocks": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "condition_to_main_after_blocks": [
+      3,
+      7,
+      11,
+      15,
+      19
+    ],
+    "main_to_condition_after_blocks": [
+      3,
+      7,
+      11,
+      15
+    ],
+    "projection_dim": 320,
+    "heads": 8,
+    "gate": "tanh_scalar_per_module",
+    "gate_init": 0.0,
+    "output_projection_init": "nonzero_xavier",
+    "update_order": "view_exchange_then_simultaneous_stream_deltas",
+    "main_latent_slots_updated": [
+      0
+    ],
+    "main_queries": "full_spatial_current_slot",
+    "reverse_main_kv": "spatial_pool_factor_2",
+    "stream_pairing": "same_camera",
+    "empty_source_behavior": "zero_delta",
+    "mode": "bidirectional",
+    "query_chunk_size": 128,
+    "initialization_equivalent_to_official": true
+  },
+  "geometry": {
+    "required": true,
+    "extrinsic_convention": "T_ego_from_cam",
+    "common_pose_frame_required": true,
+    "camera_ids_are_not_time": true,
+    "routing": "calibrated_frustum_overlap",
+    "fixed_camera_ring": false,
+    "grid_hw": [
+      8,
+      16
+    ],
+    "depth_range_m": [
+      1.0,
+      80.0
+    ],
+    "depth_samples": 16,
+    "depth_spacing": "log",
+    "overlap_threshold": 0.01,
+    "top_k": 2,
+    "tie_policy": "include_boundary_ties",
+    "ray_encoding": "direction_and_origin_cross_direction",
+    "max_exposure_delta_us": null,
+    "require_asset_variant_consistency": true,
+    "missing_calibration_behavior": "error"
+  },
+  "data": {
+    "manifest": "/data/juziwei/hlk/whole_data/processed/sequences.jsonl",
+    "split_unit": "scene",
+    "max_views": 6,
+    "allow_variable_views": false,
+    "single_view_role": "explicit_degenerate_mode",
+    "public_layout": "B,T_rgb,V,C,H,W",
+    "tokenizer_layout": "B*V,C,T_rgb,H,W",
+    "camera_ids_resolved_from": "semantic_camera_names",
+    "image_hw": [
+      288,
+      512
+    ],
+    "evaluation_hw": [
+      288,
+      512
+    ],
+    "target_semantics": "paired_harmonized_current_gt_with_asset_preserved",
+    "supervision_excluded_from_conditioning": true,
+    "asset_masks_used_at_inference": false,
+    "manifest_sha256": "3c9617092d0453f88a5196d22738f49686b603e8d9238679bccd34aea07251a7",
+    "source_dataset": "/data/public_data/harmonizer_512_20261019",
+    "source_role": "input",
+    "supervision_role": "gt"
+  },
+  "autoregressive": {
+    "required": true,
+    "protocol": "ar_generated_repeat_oldest_native_rgb_v1",
+    "time_order": "ascending_physical_timestamp",
+    "history_length": 4,
+    "history_source": "own_generated_outputs_only",
+    "history_representation": "in_memory_uint8_roundtrip_equivalent_to_lossless_native_resolution_png",
+    "first_observation": "T1",
+    "subsequent_observations": "T5_repeat_oldest_available_prediction_if_needed",
+    "pack_order": "current_then_newest_to_oldest_history",
+    "max_history_gap_us": null,
+    "allow_future_or_gt_history": false,
+    "mixed_history_lengths": "bucket_main_by_T1_T5_rejoin_current_tokens_at_exchange",
+    "publish_only_current_slot": true,
+    "commit_all_current_views_before_next_time": true,
+    "resume_requires_history_hash_match": true,
+    "history_image_hw": [
+      288,
+      512
+    ]
+  },
+  "training": {
+    "user": "hlk",
+    "dtype": "bf16",
+    "mode": "joint_from_first_optimizer_step",
+    "train_full_unet": true,
+    "main_train_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "main_embeddings_norms_and_head_trainable": true,
+    "main_freeze_steps": 0,
+    "branch_only_warmup_steps": 0,
+    "freeze_vae": false,
+    "freeze_vae_encoder": false,
+    "vae_frozen_parameter_name_contains": [
+      "time_conv"
+    ],
+    "vae_encode_decode_parameter_grad_required": true,
+    "decoder_input_grad_required": true,
+    "shared_parameters_registered_once": true,
+    "shared_vae_registered_for_ddp": true,
+    "condition_train_all_used_parameters": true,
+    "main_and_vae_gradients_required_from_first_backward": true,
+    "new_path_gradient_activation": "progressive_through_nested_zero_gates",
+    "history_protocol_role": "explicit_extension_to_official_data_pipeline",
+    "history_detach": true,
+    "history_teacher_forcing": false,
+    "history_quantization_after_current_loss": true,
+    "detach_current_history_encoder": false,
+    "rollout_length": 5,
+    "effective_batch_rollouts": 8,
+    "microbatch_rollouts": 1,
+    "batch_choice_role": "extension_not_official_image_batch_equivalence",
+    "loss_normalization": "global_valid_current_camera_images_across_ranks_and_accumulation",
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "grad_clip_norm": 1.0,
+    "main_lr": 2e-05,
+    "vae_lr": 2e-05,
+    "condition_lr": 2e-05,
+    "new_module_lr": 2e-05,
+    "new_parameter_lr_choice": "inherit_main_rate_as_extension_default",
+    "lr_scheduler": "constant",
+    "parser_lr_warmup_steps": 500,
+    "effective_lr_warmup_steps": 0,
+    "max_optimizer_steps": 10000,
+    "short_runs_change_only_step_budget": true,
+    "official_loss": {
+      "rgb_range": [
+        -1.0,
+        1.0
+      ],
+      "prediction": "unquantized_decoded_current_image",
+      "target": "paired_current_output_pixel_values",
+      "loss_input_only": true,
+      "current_selection_axis": "temporal_not_camera",
+      "rgb_mse_weight": 1.0,
+      "perceptual": {
+        "implementation": "lpips.LPIPS",
+        "net": "vgg",
+        "weight": 0.3,
+        "clamp_before_mean": [
+          0.0,
+          0.3
+        ],
+        "network_frozen": true,
+        "prediction_grad_required": true,
+        "allowed_scope": "training_objective_and_training_contract_checks_only",
+        "scope_basis": "user_requested_preservation_of_official_training_losses"
+      },
+      "opticalflow_weight": 0.0,
+      "gan_weight": 0.0,
+      "gram_weight": 0.0,
+      "clipsim_weight": 0.0
+    },
+    "auxiliary_losses": {
+      "enabled": false,
+      "rgb_l1_weight": 0.0,
+      "masked_asset_l1_weight": 0.0,
+      "current_latent_l1_weight": 0.0,
+      "role": "separate_future_ablation_additive_to_official_loss"
+    },
+    "checkpoint": {
+      "save": [
+        "main_dit",
+        "condition_dit",
+        "exchange_and_geometry",
+        "shared_vae",
+        "optimizer",
+        "lr_scheduler",
+        "global_step",
+        "rng_state",
+        "resolved_config",
+        "data_and_history_protocol"
+      ],
+      "require_training_recipe_match_on_resume": true,
+      "allow_branch_only_checkpoint": false,
+      "official_weight_initialization_is_optimizer_resume": false
+    }
+  },
+  "evaluation": {
+    "metrics": [
+      "FID",
+      "FVD",
+      "DINO structure preservation",
+      "SC",
+      "TF",
+      "MS",
+      "Asset FID",
+      "Asset DINO",
+      "Asset L1"
+    ],
+    "excluded_metrics": [
+      "PSNR",
+      "SSIM",
+      "LPIPS"
+    ],
+    "dino_structure_convention": "must_resolve_from_audited_implementation",
+    "asset_dino_reference": "paired_harmonized_gt_crop",
+    "asset_dino_convention": "must_resolve_from_audited_implementation",
+    "video_window_frames_candidate": 16,
+    "video_window_frames_resolved": null,
+    "manifest": "/data/juziwei/hlk/whole_data/processed/eval_5713_sequences.jsonl",
+    "reuse_old_protocol_scores": false,
+    "missing_metric_value": null,
+    "lpips_training_loss_is_evaluation_metric": false,
+    "manifest_sha256": "bad86cc51aad002b8824f5465a1e7877ae081a0102c232812d4cf05789e527a7",
+    "reference_manifest": "/data/juziwei/hlk/whole_data/processed/eval_5713_reference.jsonl",
+    "reference_manifest_sha256": "cabe2da350ac5e832d0af170d67ee6b1f6572d7d22364f00d9de10c041026577",
+    "autoregressive_generated_history": true
+  },
+  "required_before_execution": [
+    "implement_model_and_runner",
+    "resolve_and_audit_data_manifest_and_target_semantics",
+    "resolve_exposure_tolerance_and_history_gap",
+    "resolve_metric_definitions_and_sequence_protocol",
+    "verify_official_weight_hashes_and_runtime_shapes",
+    "pass_exchange_and_autoregressive_contract_checks",
+    "check_gpu_availability_and_duplicate_processes",
+    "run_experiment_as_hlk_with_owned_logs_and_outputs",
+    "verify_selected_official_training_source_hashes",
+    "verify_main_full_training_and_vae_except_time_conv_from_first_step",
+    "verify_trainable_tokenizer_gradient_and_ddp_registration",
+    "verify_official_loss_values_gradients_and_current_slot_selection",
+    "verify_shared_parameter_deduplication_and_full_checkpoint_resume"
+  ],
+  "training_recipe_id": "harmonizer_official_joint_v2",
+  "official_training_reference": {
+    "root": "/mnt/hlk/workspace/harmonizer_official_recipe_20261012/upstream_reference",
+    "provenance_file": "/mnt/hlk/workspace/harmonizer_official_recipe_20261012/SOURCE_PROVENANCE.json",
+    "registered_upstream_commit": "32f3eca8c0a144d9067430f9be07de7723ef172b",
+    "hashes_verified_date": "2026-10-20",
+    "verification_scope": "local_files_and_registered_provenance_no_remote_verification",
+    "sha256": {
+      "README.md": "3da75cc48df41a7f32db9172cf9b183ea81045852d4754751c3911d227af664a",
+      "src/train_pix2pix_turbo_harmonizer.py": "cf22133e223d87061b48457f5508a4aa58371e67a5bdd4e753f06afd88f03b5a",
+      "src/pix2pix_turbo_harmonizer.py": "14e23e3f8ec06d0241ce60a40ad953bc4bf495486d0972a9c6df87849efbb6cf",
+      "src/utils/training_utils.py": "e35f825f29e3896784aff882346436a463999b7e0ab82f700af76e14ddac9db9"
+    }
+  },
+  "runtime": {
+    "uid": 1000,
+    "gid": 1000,
+    "host": "tanhe-server",
+    "python": "/data/juziwei/hlk/double_DiT/runtime/tanhe/venv/bin/python",
+    "vendor": "/data/juziwei/hlk/double_DiT/runtime/tanhe/vendor",
+    "device_index": 0,
+    "original_runtime_uid": 1005,
+    "gpus": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "validation_kind": "ddp4",
+    "data_bundle": "/data/public_data/harmonizer_512_20261019"
+  },
+  "implementation_sha256": {
+    "double_dit/model_tanhe.py": "7d79fd279c8c62cc4cf747ee7d2010b56adc8ca15b5c4dda4ddc5b2b5c45f64c",
+    "double_dit/model_injection_tanhe.py": "64064d00a45c652e81ec12ac15ef1363d0e8d9ae89a367b5b112d428844d2698",
+    "double_dit/injection.py": "280010bfffcd28b842738f4b8e6d5cb38bc75cc6ea20079c54872ce22dcb4920",
+    "double_dit/perceptual_tanhe.py": "c101dd6693f03566c275c80a7091ae7af251ccc5382f1418a4252583c9a9a6bf",
+    "double_dit/data.py": "fba6cb34759acfe7235cbcd4071707e8cb8e7b0b47343836b33e75d24b90f474",
+    "double_dit/injection_data.py": "53f9fd3078a0c41c606310c408c1c715fefac25c4b4f4c58607613c1b3432f2b",
+    "scripts/train_tanhe.py": "ca5a697d8fba4f579ca6cccb827c0674d8ee42dd761c326633a7edc2bdad6ddf",
+    "scripts/run_tanhe_validation.py": "a96d04b6e73704792b6141d8ca4b683a5be078229b2e106a6db8058175c7705f",
+    "scripts/validate_sixcam.py": "759d4e77dbafc1110c8fbfcaa191b292bfafebfa331eb0a0c3dbe0cb1fa69fdb",
+    "scripts/run_sixcam_validation.py": "51defccc956237b928b6f71febdf415e0f4a5c45b19635bcd743da8e56bf54df",
+    "scripts/prepare_sixcam_validation.py": "209eea9c38f5263d2dde7fc96fca1b240f3115b89d149637ea0676d7370ce81e",
+    "double_dit/sixcam_contract.py": "282f35ad9d396f7475ecd229ff41cc449b6a248964101b8a4455e9515bc6b621",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/train_tanhe_checkpoint_fix.py": "76cd2d02e2fa5c6691c7f8c5d5d9f1aa3c2119eb0730f670e45ea36fead0b889"
+  },
+  "whole_data_interface_sha256": {
+    "train.py": "6970a691459a94672316a508f02feb35661fc7df5c16f3d0f95d2ee10aee3d35",
+    "evaluate.py": "3cb3f9a4d2e7a73b587473e1f928e4ce2fa456f4fed90384330f88e5fffbdd69",
+    "prepare.py": "0bd53f3bbfcc4b4787d5e9922d8d38fef41982b11ef27713cbf9995c23dca45d"
+  },
+  "restart_provenance": {
+    "original_config": "/data/juziwei/hlk/whole_data/configs/bidirectional.json",
+    "original_config_sha256": "e74f91a821ef9861e27fdf232c42196c94bc57f6fa9b1090b4f4a8cd766f7957",
+    "checkpoint_sync": "Gloo CPU control group; stage complete model and optimizer to CPU before atomic save",
+    "restart_reason": "Original bidirectional step-5 temporary checkpoint is not a complete zip archive; restart from official initialization",
+    "previous_run_preserved": true
+  }
+}

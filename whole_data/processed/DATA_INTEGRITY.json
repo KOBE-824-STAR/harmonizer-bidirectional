@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "image_size_wh": [
+    512,
+    288
+  ],
+  "counts": {
+    "train_groups": 32591,
+    "unique_payload_files": 185853,
+    "unique_payload_bytes": 37676710199,
+    "train_role_files": 586638,
+    "val_groups": 5880,
+    "val_role_files": 105840
+  },
+  "elapsed_seconds": 503.66930508613586,
+  "source_root": "/data/public_data/harmonizer_512_20261019",
+  "training_started": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "TRAIN_COMPLETE",
+  "world_size": 8,
+  "steps": 1000,
+  "uid": 1000,
+  "generated_history": true,
+  "implementation_sha256": {
+    "double_dit/model_tanhe.py": "7d79fd279c8c62cc4cf747ee7d2010b56adc8ca15b5c4dda4ddc5b2b5c45f64c",
+    "double_dit/model_injection_tanhe.py": "64064d00a45c652e81ec12ac15ef1363d0e8d9ae89a367b5b112d428844d2698",
+    "double_dit/injection.py": "280010bfffcd28b842738f4b8e6d5cb38bc75cc6ea20079c54872ce22dcb4920",
+    "double_dit/perceptual_tanhe.py": "c101dd6693f03566c275c80a7091ae7af251ccc5382f1418a4252583c9a9a6bf",
+    "double_dit/data.py": "fba6cb34759acfe7235cbcd4071707e8cb8e7b0b47343836b33e75d24b90f474",
+    "double_dit/injection_data.py": "53f9fd3078a0c41c606310c408c1c715fefac25c4b4f4c58607613c1b3432f2b",
+    "scripts/train_tanhe.py": "ca5a697d8fba4f579ca6cccb827c0674d8ee42dd761c326633a7edc2bdad6ddf",
+    "scripts/run_tanhe_validation.py": "a96d04b6e73704792b6141d8ca4b683a5be078229b2e106a6db8058175c7705f",
+    "scripts/validate_sixcam.py": "759d4e77dbafc1110c8fbfcaa191b292bfafebfa331eb0a0c3dbe0cb1fa69fdb",
+    "scripts/run_sixcam_validation.py": "51defccc956237b928b6f71febdf415e0f4a5c45b19635bcd743da8e56bf54df",
+    "scripts/prepare_sixcam_validation.py": "209eea9c38f5263d2dde7fc96fca1b240f3115b89d149637ea0676d7370ce81e",
+    "double_dit/sixcam_contract.py": "282f35ad9d396f7475ecd229ff41cc449b6a248964101b8a4455e9515bc6b621",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/train_tanhe_checkpoint_fix.py": "76cd2d02e2fa5c6691c7f8c5d5d9f1aa3c2119eb0730f670e45ea36fead0b889"
+  }
+}

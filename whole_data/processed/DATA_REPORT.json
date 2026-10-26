@@ -1,0 +1,54 @@
+{
+  "status": "PREPARED",
+  "training_started": false,
+  "source_data": "/data/public_data/harmonizer_512_20261019",
+  "nuscenes_metadata": "/data/public_data/nuScenes_trainval/v1.0-trainval",
+  "source_group_metadata_sha256": {
+    "train": "a5b55587550ccd863b0d08db69523a672ce2ecab47d5db977048c9bec61f1734",
+    "val": "d95f1f7dbcdfe5e1e95080861f927e853f52b0de29dc916fa453df48a4721c60"
+  },
+  "manifest": "/data/juziwei/hlk/whole_data/processed/sequences.jsonl",
+  "manifest_sha256": "3c9617092d0453f88a5196d22738f49686b603e8d9238679bccd34aea07251a7",
+  "eval_manifest_sha256": "bad86cc51aad002b8824f5465a1e7877ae081a0102c232812d4cf05789e527a7",
+  "eval_reference_sha256": "cabe2da350ac5e832d0af170d67ee6b1f6572d7d22364f00d9de10c041026577",
+  "training_and_validation": {
+    "train": {
+      "sequences": 10727,
+      "frames": 32591,
+      "multi_frame_sequences": 8016,
+      "asset_identities": 8086
+    },
+    "val": {
+      "sequences": 781,
+      "frames": 5880,
+      "multi_frame_sequences": 630,
+      "asset_identities": 781
+    }
+  },
+  "eval_sequences": 770,
+  "eval_frames": 5713,
+  "eval_reference_views": 34278,
+  "active_camera_counts": {
+    "train_1": 31665,
+    "train_2": 923,
+    "train_3": 3,
+    "val_1": 5693,
+    "val_2": 187
+  },
+  "exposure_over_50ms_groups": {
+    "train": 778,
+    "val": 206
+  },
+  "camera_order": [
+    "CAM_FRONT",
+    "CAM_FRONT_RIGHT",
+    "CAM_BACK_RIGHT",
+    "CAM_BACK",
+    "CAM_BACK_LEFT",
+    "CAM_FRONT_LEFT"
+  ],
+  "source_role": "input",
+  "supervision_role": "gt",
+  "geometry": "all cameras transformed to the CAM_FRONT exposure ego frame",
+  "history_protocol": "generated model outputs only; no original RGB history"
+}

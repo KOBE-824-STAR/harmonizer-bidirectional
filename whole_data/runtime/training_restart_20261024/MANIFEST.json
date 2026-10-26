@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-10-24T10:13:24.416263+08:00",
+  "scope": "Train bidirectional then modulation, 8 GPUs, 1000 steps each; no evaluations or benchmark launches",
+  "original_trainer": "/data/juziwei/hlk/double_DiT/scripts/train_tanhe.py",
+  "original_trainer_sha256": "ca5a697d8fba4f579ca6cccb827c0674d8ee42dd761c326633a7edc2bdad6ddf",
+  "recovery_files_sha256": {
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/train_tanhe_checkpoint_fix.py": "76cd2d02e2fa5c6691c7f8c5d5d9f1aa3c2119eb0730f670e45ea36fead0b889",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/train.py": "9f8a0f3058bd8d19a787acd6b9ca4fef91dd930ad6762660b7239b9c40d1ce94",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/configs/bidirectional.json": "dde382745782d249096fa1d4d973ea3763de086e1b9d989baaa796554befb095",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/configs/modulation.json": "7135226d2e4d923b04b3097d5db329d483e007dbc9cb9c0c14fa0c93d710c61e",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/run_training_queue.py": "2d8ebb9b693a4056ef667f5baff8c3363d2613497b703f96faef674e2e90b748"
+  },
+  "failed_checkpoint_valid_zip": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "ready_mask_rows": 5863,
+  "empty_mask_rows": 28415,
+  "unique_masks_hashed": 5778,
+  "elapsed_seconds": 3.2956368923187256,
+  "training_started": false
+}

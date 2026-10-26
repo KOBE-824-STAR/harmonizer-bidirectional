@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+._*
+weights/
+assets/
+outputs/
+data/manifests/
+configs/local.json
+*.pt
+*.pth
+*.pkl
+*.part-*

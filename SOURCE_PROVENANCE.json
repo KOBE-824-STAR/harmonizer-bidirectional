@@ -1,0 +1,10 @@
+{
+  "upstream_commit": "32f3eca8c0a144d9067430f9be07de7723ef172b",
+  "files": {
+    "src/train_pix2pix_turbo_harmonizer.py": "cf22133e223d87061b48457f5508a4aa58371e67a5bdd4e753f06afd88f03b5a",
+    "src/pix2pix_turbo_harmonizer.py": "14e23e3f8ec06d0241ce60a40ad953bc4bf495486d0972a9c6df87849efbb6cf",
+    "src/utils/training_utils.py": "e35f825f29e3896784aff882346436a463999b7e0ab82f700af76e14ddac9db9",
+    "src/opticalflow_loss.py": "010bf0a44c95d4ba93be76046692c0ed62cc91e4d3b2b956ba230a230adc8308",
+    "README.md": "3da75cc48df41a7f32db9172cf9b183ea81045852d4754751c3911d227af664a"
+  }
+}

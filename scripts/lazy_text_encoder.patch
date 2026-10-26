@@ -1,0 +1,29 @@
+--- original/imaginaire/auxiliary/text_encoder.py
++++ vendor/imaginaire/auxiliary/text_encoder.py
+@@ -31,8 +31,6 @@
+ from imaginaire.constants import COSMOS_REASON1_PRIVATE_CHECKPOINT, T5_MODEL_DIR, TEXT_ENCODER_CLASS, TextEncoderClass
+ from imaginaire.lazy_config import LazyCall as L
+ from imaginaire.lazy_config import instantiate as lazy_instantiate
+-from imaginaire.models.vlm_qwen import build_tokenizer
+-from imaginaire.models.vlm_qwen_omni import QwenVLBaseModel
+ from imaginaire.utils import log
+ 
+ transformers.utils.logging.set_verbosity_error()
+@@ -114,7 +112,7 @@
+     embedding_concat_strategy: str = str(EmbeddingConcatStrategy.FULL_CONCAT)
+     n_layers_per_group: int = 5
+     ckpt_path: str = COSMOS_REASON1_PRIVATE_CHECKPOINT
+-    model_config: QwenVLBaseModel = L(QwenVLBaseModel)(  # noqa: RUF009
++    model_config: Any = L("imaginaire.models.vlm_qwen_omni.QwenVLBaseModel")(  # noqa: RUF009
+         model_config=L(QwenModelConfig)(
+             tokenizer_type="Qwen/Qwen2.5-VL-7B-Instruct",
+             name_or_path="Qwen/Qwen2.5-VL-7B-Instruct",
+@@ -129,7 +127,7 @@
+             vision_config=L(QwenVisionConfig)(out_hidden_size=3584),
+             output_hidden_states=True,
+         ),
+-        tokenizer=L(build_tokenizer)(
++        tokenizer=L("imaginaire.models.vlm_qwen.build_tokenizer")(
+             tokenizer_type="Qwen/Qwen2.5-VL-7B-Instruct",
+         ),
+     )

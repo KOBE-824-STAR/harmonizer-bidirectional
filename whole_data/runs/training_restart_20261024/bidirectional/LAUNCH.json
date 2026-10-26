@@ -1,0 +1,52 @@
+{
+  "status": "FINISHED",
+  "mode": "bidirectional",
+  "data": {
+    "manifest": "/data/juziwei/hlk/whole_data/processed/sequences.jsonl",
+    "splits": {
+      "train": {
+        "sequences": 10727,
+        "frames": 32591
+      },
+      "val": {
+        "sequences": 781,
+        "frames": 5880
+      }
+    },
+    "train_sequences_with_history": 8016,
+    "cameras_per_frame": 6,
+    "validation_split_required": true
+  },
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "output": "/home/tanhe/hlk_training_restart_20261024/bidirectional",
+  "command": [
+    "/data/juziwei/hlk/double_DiT/runtime/tanhe/venv/bin/python",
+    "-m",
+    "torch.distributed.run",
+    "--standalone",
+    "--nnodes=1",
+    "--nproc-per-node=8",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/train_tanhe_checkpoint_fix.py",
+    "--config",
+    "/data/juziwei/hlk/whole_data/runtime/training_restart_20261024/configs/bidirectional.json",
+    "--output",
+    "/home/tanhe/hlk_training_restart_20261024/bidirectional",
+    "--phase",
+    "train",
+    "--steps",
+    "1000"
+  ],
+  "formal_training_started": true,
+  "exit_code": 0,
+  "started_at": 1792808096.0497193,
+  "finished_at": 1792838930.3915489
+}

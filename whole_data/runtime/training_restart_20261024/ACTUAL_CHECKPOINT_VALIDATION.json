@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checkpoint": "/home/tanhe/hlk_training_restart_20261024/bidirectional/latest.pt",
+  "step": 5,
+  "rng_ranks": 8,
+  "model_state_entries": 1340,
+  "optimizer_state_entries": 1156,
+  "file_bytes": 8057077455
+}

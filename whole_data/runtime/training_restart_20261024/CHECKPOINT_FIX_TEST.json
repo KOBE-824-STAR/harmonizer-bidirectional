@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "world_size": 2,
+  "tested": [
+    "Gloo RNG gather and barrier",
+    "CPU checkpoint preserves state dict metadata",
+    "model and optimizer checkpoint roundtrip",
+    "atomic file flush"
+  ]
+}

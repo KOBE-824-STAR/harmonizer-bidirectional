@@ -1,0 +1,1393 @@
+{
+  "scope": "Initial source snapshot before Release attachment manifest; excludes itself and future release manifest",
+  "files": {
+    ".gitignore": {
+      "bytes": 127,
+      "sha256": "2727c301a4565e57e52501d0d92a95900f5c0d4bdfc0a8426847b62589d86165"
+    },
+    "LICENSE": {
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    "README.md": {
+      "bytes": 4786,
+      "sha256": "cfc6a244b56ce6ec1027f05040aea9c8c62d6db766088305d39e8de323856a19"
+    },
+    "SOURCE_PROVENANCE.json": {
+      "bytes": 592,
+      "sha256": "1e7bf68e91f5d0cefd761b311b6c7ffe937d1da668754eb841ef8439d864b7bc"
+    },
+    "THIRD_PARTY_LICENSE.txt": {
+      "bytes": 759031,
+      "sha256": "976881f7972f7664ef3bd19bee2d88a12f07f1487192011b350b05e33d76ecc3"
+    },
+    "configs/double_dit_v1_full.json": {
+      "bytes": 10566,
+      "sha256": "d0457fb759d2e0718c11e805fb64e48d8d7ea6027d6a2e473a2f1d777b5e3438"
+    },
+    "configs/injection_bidirectional.json": {
+      "bytes": 10708,
+      "sha256": "e24637397e772f5d192348a3032ea1679ad566783bc93a20bf64ecc1b27b0829"
+    },
+    "configs/injection_geometry.json": {
+      "bytes": 11009,
+      "sha256": "f8e321372b25a47ab2059f4d162064a9dd79a9dd990bede44c143a087e6b82c8"
+    },
+    "configs/injection_joint.json": {
+      "bytes": 10573,
+      "sha256": "248c1cb6cf6638c69ad3aec500658a2a2736a943da2bed66f3cde65c1ef58324"
+    },
+    "configs/injection_modulation.json": {
+      "bytes": 10606,
+      "sha256": "7fc45ca86a6378eb4f956e3a3d7309ba82089f07a40b20eb539f419a622cec84"
+    },
+    "configs/injection_one_way.json": {
+      "bytes": 10654,
+      "sha256": "2499d0698c3e5f0b22f5ed53ff609b6ee113327ee9e15403268ace333490d736"
+    },
+    "double_dit/__init__.py": {
+      "bytes": 76,
+      "sha256": "24cdbb353b0ac1c3c75272fc8b81a0a7c95f01b2e593964d9ac5db2b53d056bf"
+    },
+    "double_dit/data.py": {
+      "bytes": 1711,
+      "sha256": "fba6cb34759acfe7235cbcd4071707e8cb8e7b0b47343836b33e75d24b90f474"
+    },
+    "double_dit/injection.py": {
+      "bytes": 11549,
+      "sha256": "280010bfffcd28b842738f4b8e6d5cb38bc75cc6ea20079c54872ce22dcb4920"
+    },
+    "double_dit/injection_data.py": {
+      "bytes": 2152,
+      "sha256": "53f9fd3078a0c41c606310c408c1c715fefac25c4b4f4c58607613c1b3432f2b"
+    },
+    "double_dit/model.py": {
+      "bytes": 11998,
+      "sha256": "590c95498bc4b186342cf68fd96b01dce04fb23d31c8467a79c59def50747236"
+    },
+    "double_dit/model_injection.py": {
+      "bytes": 6994,
+      "sha256": "961d60be2768cfad85f1f989026757d61db867e895252d93dc7d3f3cb952b8ee"
+    },
+    "double_dit/model_injection_tanhe.py": {
+      "bytes": 7167,
+      "sha256": "64064d00a45c652e81ec12ac15ef1363d0e8d9ae89a367b5b112d428844d2698"
+    },
+    "double_dit/model_tanhe.py": {
+      "bytes": 12306,
+      "sha256": "7d79fd279c8c62cc4cf747ee7d2010b56adc8ca15b5c4dda4ddc5b2b5c45f64c"
+    },
+    "double_dit/perceptual_tanhe.py": {
+      "bytes": 1747,
+      "sha256": "c101dd6693f03566c275c80a7091ae7af251ccc5382f1418a4252583c9a9a6bf"
+    },
+    "double_dit/sixcam_contract.py": {
+      "bytes": 3791,
+      "sha256": "282f35ad9d396f7475ecd229ff41cc449b6a248964101b8a4455e9515bc6b621"
+    },
+    "runtime/tanhe/requirements_resolved.txt": {
+      "bytes": 3267,
+      "sha256": "c79c9a26927cdab27ed0a0d0cdf9f0210e58803fd942abf695113bc4924a583a"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/cosmos_reason1.py": {
+      "bytes": 14418,
+      "sha256": "c7c50beee1961ced16561fa16745fee890a496921ab0dda624e2e8015606bb15"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/blocklist/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/blocklist/blocklist.py": {
+      "bytes": 9796,
+      "sha256": "2744af20d318e64d8b59d1be91227c758b35c9921ba50b961c218f2c05fab0ee"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/blocklist/utils.py": {
+      "bytes": 1536,
+      "sha256": "9449046f0958a14f79fd218801831bb1778a5a19f1455ae43c1750effe431b81"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/common/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/common/core.py": {
+      "bytes": 2841,
+      "sha256": "c2c74064d76a5bc010cc877e91f2aebdfa709d46634a894e60d9653f22225342"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/common/io_utils.py": {
+      "bytes": 2653,
+      "sha256": "b3d5c90d946cf77049f2651183677d5d7436d567d4040245db060140ca0c4d09"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/common/presets.py": {
+      "bytes": 3120,
+      "sha256": "973d182a1fe9cc666286433e949fc221dd26191589fe56137f5a983d8f06d1f5"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/face_blur_filter/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/face_blur_filter/blur_utils.py": {
+      "bytes": 1320,
+      "sha256": "d9d02eb97655d2b05fd30b4d32b3fa79e5b3c39729e97c7b8281e50be6660be2"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/face_blur_filter/face_blur_filter.py": {
+      "bytes": 9383,
+      "sha256": "59fc2322e243c1656484c0b629a4cf27131dbc37e7bfb0f4eea527dcf47ae2ec"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/face_blur_filter/retinaface_utils.py": {
+      "bytes": 4658,
+      "sha256": "971ca1fc07c24f4ac44f276ba0fd4a402f902f61c199e2e5b3d570d37d54e68a"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/llamaGuard3/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/llamaGuard3/categories.py": {
+      "bytes": 1115,
+      "sha256": "a9e4cbefe8611716e0b326f9d713209581be9fe835d1d959ef26f613634fd672"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/llamaGuard3/llamaGuard3.py": {
+      "bytes": 5750,
+      "sha256": "f1653c108321fed20b0ce9fd0a372664078ee486968b8c1e3e914d076d9b6541"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/video_content_safety_filter/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/video_content_safety_filter/model.py": {
+      "bytes": 2024,
+      "sha256": "a023cd761993008b76213414b3989a64be7c2acb1cfee194444c6575e6f55dfe"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/video_content_safety_filter/video_content_safety_filter.py": {
+      "bytes": 8153,
+      "sha256": "02df63bc7781067c80423707f8388ed3b3e6648becb4b193ff33f1d30c4a7442"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/auxiliary/guardrail/video_content_safety_filter/vision_encoder.py": {
+      "bytes": 1893,
+      "sha256": "8ca18601ab2379a4be7c9cf4ddb47bc0add3249a179985468aa1baea126bf130"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/callbacks/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/callbacks/device_monitor.py": {
+      "bytes": 5525,
+      "sha256": "0b76aac86aa48e5ee2bc909647fb77114d601ae3a6660a2986c2b58f908524db"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/callbacks/every_n_draw_sample.py": {
+      "bytes": 14851,
+      "sha256": "039503b129bae493cb67ec48cf141fbb1cbf17d5100382d15e84cfbe29344a15"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/callbacks/every_n_draw_sample_multiviewvideo.py": {
+      "bytes": 17114,
+      "sha256": "fc7ea22cb2a83d9461a7fe51fdaac70a4117564eb8eac928307b2cc8bcea801f"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/callbacks/grad_clip.py": {
+      "bytes": 3467,
+      "sha256": "38fcaad60dc8a203b1d706e2cd99cde71c0b801a83b370491f47302770b8ffdf"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/callbacks/iter_speed.py": {
+      "bytes": 2827,
+      "sha256": "9e681510b131f5b0b6cf79f684dc167610c85ec1da3129a6cec187ef547bf31c"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/callbacks/loss_log.py": {
+      "bytes": 3305,
+      "sha256": "e394f16bc6ea628437dad24408d6c80b1c11bf2e7cf20450497a89cb124bc431"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/checkpointer.py": {
+      "bytes": 15008,
+      "sha256": "e71d22c5b92a2da003c5dad7b41c1d96519efd0e29fcdaea991b94495f1eb8ff"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/conditioner.py": {
+      "bytes": 43945,
+      "sha256": "c7cf6deeb914824bb943a7f8752a394a11cd5cf8d02cd094af5b6de034536fc8"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/action_conditioned/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/action_conditioned/config.py": {
+      "bytes": 5190,
+      "sha256": "35c3ab515e794a30f315e5e33cb04fbe01ac303198cf195e3d0330ac16d30d21"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/action_conditioned/defaults/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/action_conditioned/defaults/data.py": {
+      "bytes": 3008,
+      "sha256": "d79b2c475aaaf15d362b17948fa245440c63789c9f1a59b96a318fe7ba2df0df"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/action_conditioned/defaults/model.py": {
+      "bytes": 2181,
+      "sha256": "154780096eab0561372b778ee36ccf1de2a7b5af25dc3d58c688b7e8594adcb5"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/action_conditioned/experiment/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/action_conditioned/experiment/exp.py": {
+      "bytes": 2121,
+      "sha256": "6593f49f2bc30d029e74912596316544918e2017e825aae6744e6c09b932bb98"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/config.py": {
+      "bytes": 3852,
+      "sha256": "e15c14f7876ce4554e8bd1fe3c5e51b6c3df4d0c28fd86e0d49811ac015dac50"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/config_multiview.py": {
+      "bytes": 7222,
+      "sha256": "a07fc9c087c0942e98969c2d4b2e5d0fc9c4b0158e35c0b36229b3af88045d99"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/config_natten.py": {
+      "bytes": 9366,
+      "sha256": "7aebaf9a01400a92758f70673e7064e2c4b106fd08a69a595e7eb4a9a1659e7a"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/config_text2image.py": {
+      "bytes": 11237,
+      "sha256": "23a98c0e4694020bce17c355c6344cb303f8ce207430ede26e6893c574b71692"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/config_video2world.py": {
+      "bytes": 17024,
+      "sha256": "d830edc325e0a81b70ece9da3b235724c8878793da97259d0268efd4e1dd6ecc"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/callbacks.py": {
+      "bytes": 1755,
+      "sha256": "82adcda17c2a303eb4f08289873447d2cfe1912b690417e27fae1c380502abcd"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/checkpoint.py": {
+      "bytes": 1054,
+      "sha256": "5eb62168837aef1266d0b749c8d30f7ea901c296fef7db72b1a275f0e6fde530"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/data.py": {
+      "bytes": 2859,
+      "sha256": "9e9aac1c8b3a47efd7704b89ca167109329d86656bd31a66dd081583bfc5b4b0"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/ema.py": {
+      "bytes": 1261,
+      "sha256": "2e2cda8ec38b3e695cb3c0b54c1e08b211bb46baf36ab7cadc95f230e9881aa8"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/model.py": {
+      "bytes": 13398,
+      "sha256": "c07bc234529503b8c44a60ca31d2f6de2bc92f67997bfce593229e8829e2b9e6"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/optimizer.py": {
+      "bytes": 2851,
+      "sha256": "81e4ebe78402ab0e0a6e85e2ddb00268166a002849cae16f41ed427ebf0c3764"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/defaults/scheduler.py": {
+      "bytes": 1520,
+      "sha256": "ca13579ea3dd569c936442001ae6c8e86b2ed99cade8c9ee0790c2041bcebf3b"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/agibot_head_center_fisheye_color.py": {
+      "bytes": 16221,
+      "sha256": "7c108133dac60d486ac04497d15e0aab047499bf42d8dfe50443dee74e6a7f12"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/cosmos_nemo_assets.py": {
+      "bytes": 8634,
+      "sha256": "686e0b89120c4bc3665203d4c81e6d9a537f0a0a1528ab0a2921cc1717b8c431"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/cosmos_nemo_assets_lora.py": {
+      "bytes": 6090,
+      "sha256": "b8d42ee621b798f7bd2756d1ce6074684c3021cb90a562414773b5768cafb235"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/groot.py": {
+      "bytes": 4791,
+      "sha256": "4d8dfabaddbd43c16607a07b123b251e41efd22b211481a1dd619f8727eca52d"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/multiview/waymo.py": {
+      "bytes": 13905,
+      "sha256": "fcd87395e012eb434be3bcb4df58ff923bbe5188ef4724ca4340b6038f49a7a9"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/utils.py": {
+      "bytes": 849,
+      "sha256": "37170b864d2c08cb79f2c749d907ac019461f7d351fb73cb6aeca61352a32006"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/base/experiment/video2world_data.py": {
+      "bytes": 5030,
+      "sha256": "86c6c3725dc794f0bf272c05e171884f0762ee835c33162881058d476bca296b"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/configs/conditioner.py": {
+      "bytes": 1724,
+      "sha256": "5ccb4a2591980be9e57b83bb96ba3da57f928aa2530b68624859e7f3e6d60eb1"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/action_conditioned/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/action_conditioned/action_conditioned_dataset.py": {
+      "bytes": 16770,
+      "sha256": "9535c69210c963141e9ba47f0af56d3db7ae6f1a5a75b8ee155a5eee10d255a4"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/action_conditioned/dataset_utils.py": {
+      "bytes": 5687,
+      "sha256": "a6526d9e6f66ab465dd45d561517cb33c5f9b31ea3110e8892f2c146d489e892"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/dataset_image.py": {
+      "bytes": 4993,
+      "sha256": "66641aaac9d2008efbe0bc5b3560f3af2f7818fba85326043d49779a46e68ed2"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/dataset_multiview.py": {
+      "bytes": 11488,
+      "sha256": "164ba34f6bb57cd79f41fddacd9ced00e22a56b81ab36d345d04da452695d5b2"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/dataset_utils.py": {
+      "bytes": 4558,
+      "sha256": "499fc69e49691d2391eee3c4e04e3c86a081b5b6d6fbdaee6042ac4aac64aa9e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/dataset_video.py": {
+      "bytes": 7164,
+      "sha256": "fe5c9de9d82f82b3dc3252b5b5ac816b1a6234289a231c36c8b6fc09b3183a3d"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/datasets.py": {
+      "bytes": 2209,
+      "sha256": "ab5e178dedee68e838a74df062354ad3b5f10c70a2123db6041b8ac74bd53bdc"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/data/webdataloader.py": {
+      "bytes": 3958,
+      "sha256": "0f8c6f46f6050731509f3c7429e3e09e8ef34c9ea3fbfc8cf6659a8b35d11dab"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/augmentor_provider.py": {
+      "bytes": 10912,
+      "sha256": "cbe496da5a097e266ff421810e3058d43bb7d8e39911ca58258ee64bc4d720ce"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/augmentors/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/augmentors/append_fps_frames_for_image.py": {
+      "bytes": 1422,
+      "sha256": "a9621627462416a44ab50d6cf52dce364a71d0f9ce7483b464e77847e92b2697"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/augmentors/merge_datadict.py": {
+      "bytes": 2124,
+      "sha256": "6d2be5efc8bb5f165b2480702c7aaced31cbc3585670374fe1518b27ebd6df1e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/augmentors/text_transforms_for_image.py": {
+      "bytes": 5631,
+      "sha256": "9ad07e1584d7c1b4309308b9d8211ab164d7b49850dfd68c4d30dc6973bdae55"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/augmentors/text_transforms_for_video.py": {
+      "bytes": 8772,
+      "sha256": "de0dec84450a59cf1d3977341427899493a404089ce692fe34d3d3983d088df9"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/augmentors/video_parsing.py": {
+      "bytes": 5665,
+      "sha256": "54be3a707b2e0d906dd035d2fa48859a3afe415ea44cfb0cd0e45788a2a21e7c"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/cached_replay_dataloader.py": {
+      "bytes": 14953,
+      "sha256": "9c0cb0f0aa701ffefe836e90db93a4b7431e78ab641650b4e53d85bafb0b8461"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/data_sources/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/data_sources/mock_data.py": {
+      "bytes": 3409,
+      "sha256": "ec6a7b341662d0f399fc166920869871dbdc139a4ddae1606c6c876d7f914b8d"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/dataset_provider.py": {
+      "bytes": 7898,
+      "sha256": "8e9b4ef89eb8397de0b28d30ed60327c76a55d44f06781bddfeee4ee92fbb586"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/decoders/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/decoders/video_decoder.py": {
+      "bytes": 20678,
+      "sha256": "7fd2f2100ad0058bfcc21600b2565dbb081dfca3cdb3f015dc040a1ce9cbe9e6"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/distributor/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/distributor/parallel_sync_multi_aspect_ratio.py": {
+      "bytes": 5913,
+      "sha256": "9c4da8f1bfac2b47176331512c977533f2802106af9bd7dfccae8407bc1d95c1"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/joint_dataloader.py": {
+      "bytes": 5535,
+      "sha256": "2f4053767683be3a8e95c07dc1baaa57aac02264b403f63b64e5d948e60dcbfb"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/utils.py": {
+      "bytes": 1604,
+      "sha256": "cca46ebdd4076b1ba9ebabd35d5407e5b7968c030d22f6a9bf55140f9bf78f0f"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/watchdog.py": {
+      "bytes": 11131,
+      "sha256": "e3a82ace85f86bd8c459091feeda6df5fd8bd6102de0d3844ede6798a1485146"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/datasets/webdataset.py": {
+      "bytes": 4530,
+      "sha256": "521d2db91c77cc0163a83e7205143599551b5df389ed334d44ca972bc42c7227"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/functional/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/functional/batch_ops.py": {
+      "bytes": 1861,
+      "sha256": "17b7b1ad5ea10d5ba9a69bda5b91b929f70cca7a72289824c61e5259f97b7139"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/functional/lr_scheduler.py": {
+      "bytes": 7089,
+      "sha256": "9256080d5e356576d6b03923b5efabfa0f086c037acb6f6452b78b4cc9bc3ec8"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/functional/multi_step.py": {
+      "bytes": 1875,
+      "sha256": "d346684f56dec791ff97daaef685c5d5ae503304988300312028a9532efcf371"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/functional/runge_kutta.py": {
+      "bytes": 9368,
+      "sha256": "fada1f62eed178081d1670516be6e49bca9da26b8ed941ff46a9ac0aa5515565"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/multiview_dit.py": {
+      "bytes": 18426,
+      "sha256": "ea7c748ebd0db1858896f44538cb89f55183d25c842f49116cffa667d10be53b"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/multiview_model.py": {
+      "bytes": 6283,
+      "sha256": "04b8faa213dc6f82e74ec1134f010c56896a18720211d1a45bb05288b34c48ba"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/text2image_dit.py": {
+      "bytes": 66296,
+      "sha256": "3c62533544d38908cae15498749bd3cc4266254d8ae39c9dd972e8d9f4458a09"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/text2image_model.py": {
+      "bytes": 20567,
+      "sha256": "168f73758262e3146f6dd1701bebd1bdb54431fd7cb47f07516693d3a619faa5"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/utils.py": {
+      "bytes": 7902,
+      "sha256": "615fbd8eb4c11501230383aa895933c19dd095a8569f5e71de4c0df986c3c12d"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/video2world_action_dit.py": {
+      "bytes": 6096,
+      "sha256": "8ded6174157fe074565316f1e2f32b1d0b391e1fedd7ca900c7624222c24230f"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/video2world_action_model.py": {
+      "bytes": 4792,
+      "sha256": "6c9f7e3784921f18156bd4fc8939e923ef7d6cf95c86ad1d62785bcf3554c6f4"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/video2world_dit.py": {
+      "bytes": 2275,
+      "sha256": "596acf037a8f0a780d3d8a8e205270bdb62afe6db9d7a350003cc70131962f57"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/models/video2world_model.py": {
+      "bytes": 26590,
+      "sha256": "6da05d2aa9e419365b8fdbadffbbed7677080407d9d0e906139fb49f76bf575c"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/module/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/module/a2a_cp.py": {
+      "bytes": 8815,
+      "sha256": "e589fd017c4ff62b94c3a68bf73f44e9033f16e55e4f28b8e828f04c4f42ff4d"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/module/attention.py": {
+      "bytes": 6323,
+      "sha256": "d84270c5217aca7ee5f1153c62df5837d15234c0cc39de3c9537278fc89436df"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/module/denoise_prediction.py": {
+      "bytes": 983,
+      "sha256": "7ebd102bc725b118f6643a1bb282e509524423a286d0a659a1e906cd025087bb"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/module/denoiser_scaling.py": {
+      "bytes": 2861,
+      "sha256": "8d46e93faf47d4ba4705e7c7c8864a45ebc5bc2114e9c26565149db38067d59b"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/module/neighborhood_attn.py": {
+      "bytes": 10429,
+      "sha256": "7dbcfe13216b2df915c0cfcd3cb72a9a2c099e529b93776f0dd35e347145b79b"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/module/res_sampler.py": {
+      "bytes": 10350,
+      "sha256": "f180bba589b10ca7fb9585afc4a00ae7556e6cd722e46c5ae7d186868290cde6"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/networks/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/networks/model_weights_stats.py": {
+      "bytes": 2239,
+      "sha256": "b7295540f2606e4dad04681b6aa33bc4935214948192755a6b117e73a0c48b2b"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/networks/selective_activation_checkpoint.py": {
+      "bytes": 2448,
+      "sha256": "0aa5c99df99a7809a84e668291f507a2856a90d8b37ca6a014de3f45d4785ee8"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/pipelines/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/pipelines/base.py": {
+      "bytes": 6596,
+      "sha256": "40755c60ecf0d319340035da60c3bbabe05e87961622b567cc86ff2b3e523d47"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/pipelines/multiview.py": {
+      "bytes": 42445,
+      "sha256": "f4ba257d6d8dcdb351617604bae4ed5a1780efa2710c414fe3d29b6a72241c56"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/pipelines/text2image.py": {
+      "bytes": 19783,
+      "sha256": "53958fb761d5123b8f1f779a2be945262673f05a09144adbcd93192c826c55f4"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/pipelines/video2video_sdedit.py": {
+      "bytes": 34537,
+      "sha256": "87a5716cb5c22ece5900a40b2159c3461adf45c387442624c5de86a13079d345"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/pipelines/video2world.py": {
+      "bytes": 48136,
+      "sha256": "04ddc73f6e0a2af9d4c334f2ad659a772084c3f1d6943370785e3be911a4d5ed"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/pipelines/video2world_action.py": {
+      "bytes": 15355,
+      "sha256": "33ed67b488baa783108c9d32cbe2b9d1e149bf7ad5b7655a9011a21960495e33"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/schedulers/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/schedulers/rectified_flow_scheduler.py": {
+      "bytes": 4903,
+      "sha256": "3ab5e171ffea12a23c328247061216ea4ee530d97bf3ab9f227c513808f0d2c3"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/tokenizers/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/tokenizers/interface.py": {
+      "bytes": 2030,
+      "sha256": "4406f1b0c14deaa734251bdb6cdbd836327b1ea65ac7195b76e967469e60f1fa"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/tokenizers/tokenizer.py": {
+      "bytes": 38373,
+      "sha256": "53a672fdd450f8b13e510b4dee087857cf9533abf2e5a1e06f0c65e772adaa2a"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/tokenizers/tokenizer.py.orig": {
+      "bytes": 38457,
+      "sha256": "b2cb5efef419f9ada8a0e0941142ccaddae348b5aa4934b3b4eb8b8dbfddc8a5"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/checkpointer.py": {
+      "bytes": 11380,
+      "sha256": "d53c9a0704809ebd57603d56b64f4269e67155eb0d6a4c0202f993936bb6b27b"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/context_parallel.py": {
+      "bytes": 7658,
+      "sha256": "893a1e2bf5bd4c3c86cbccd3c4c2ee301e6ed4c36f04e05e9c28db209d90a6cb"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/dtensor_helper.py": {
+      "bytes": 4017,
+      "sha256": "7860a06e946a490420a63062b10842fb614721bdff0b705a6f117f750570fc44"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/flash_attn_3/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/flash_attn_3/flash_attn_interface.py": {
+      "bytes": 30320,
+      "sha256": "e9b95e7d10ef276bf07fc37d985f21b8cf928b757b4cff92659a8005a67902f5"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/flash_attn_3/te_attn.diff": {
+      "bytes": 2813,
+      "sha256": "805527bdb46e6ec459557a0b359225789bea8d7ebecf965a7ef3229a56b44e71"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/fsdp_helper.py": {
+      "bytes": 6020,
+      "sha256": "262c43d98e8f80376991737171b2e2110693218cbbd4f2c57de324fcc6f66173"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/fused_adam_dtensor.py": {
+      "bytes": 18075,
+      "sha256": "4873f1a2d903d8d8631a0a25e9d7a627af136dfa1dca9b77f055ecf25b0700a9"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/misc.py": {
+      "bytes": 1386,
+      "sha256": "0879f8ee6e8fc9103b55a64234a7a9928781be4ed0b1a19878e8dee9a7813c80"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/optim_instantiate.py": {
+      "bytes": 2592,
+      "sha256": "e6ba23cbae246a6eeb87b26354259dbbc556f30e4e2cc47c49fbd505a4ef146f"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/optim_instantiate_dtensor.py": {
+      "bytes": 2350,
+      "sha256": "240f4938040ede4c4b42994c1459fd4158826a234e5ed77355813cf5fad271db"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/utils/torch_future.py": {
+      "bytes": 9399,
+      "sha256": "14f18566447451361b4ceba89cfd03fe87cc1c6b3caf6f47760524d645377cb3"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/vram_management/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/cosmos_predict2/vram_management/layers.py": {
+      "bytes": 5806,
+      "sha256": "5019efb30efeb39d1d3d1c40e7aa4a94fc9de55ed3371f2475175a682f209845"
+    },
+    "runtime/tanhe/vendor/imaginaire/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/auxiliary/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/auxiliary/text_encoder.py": {
+      "bytes": 15722,
+      "sha256": "351339c67638f07ce2fca8febf29f7692b7f4064fe6a0ffd83ea974c483fc8b1"
+    },
+    "runtime/tanhe/vendor/imaginaire/callbacks/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/callbacks/every_n.py": {
+      "bytes": 3386,
+      "sha256": "56cde5a62b37e59451d576262499b8e971974c964c0e4644857ae568f2e91477"
+    },
+    "runtime/tanhe/vendor/imaginaire/callbacks/manual_gc.py": {
+      "bytes": 1831,
+      "sha256": "4bd3f52aa785b1789cfb66a19a6d9724d8697ebf377d3130449a6ccdc8136573"
+    },
+    "runtime/tanhe/vendor/imaginaire/config.py": {
+      "bytes": 14027,
+      "sha256": "c8470dcb297304e5f1d94219675bb2250c7471d0667fa9bffea9132681bac089"
+    },
+    "runtime/tanhe/vendor/imaginaire/configs/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/configs/reason1/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/configs/reason1/model_config.py": {
+      "bytes": 12945,
+      "sha256": "af30baa2e0286e687158854ee107a248d81cfabd86d651623b2fb2626d4357a5"
+    },
+    "runtime/tanhe/vendor/imaginaire/configs/reason1/model_config_qwen.py": {
+      "bytes": 7258,
+      "sha256": "7cc22fd6d5587614f4af9f69152f5b1e67b438d08021aa84c2d0cbc32475eefe"
+    },
+    "runtime/tanhe/vendor/imaginaire/constants.py": {
+      "bytes": 7447,
+      "sha256": "ab1b1e88a5bdb647e49e77fb8cb6110e6c153f5bf7b25f3807540fa614f21757"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/mock_dataset.py": {
+      "bytes": 7296,
+      "sha256": "19e3dc5869947dd1b3f1812475946cb8c47ee1b82d49d6cda8bcc6a725b1336b"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/augmentors/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/augmentors/augmentor.py": {
+      "bytes": 2348,
+      "sha256": "4e26db07850cf84403317026cffa282482d1e25edba988dcdaf2ffffee9b5590"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/augmentors/image/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/augmentors/image/misc.py": {
+      "bytes": 2192,
+      "sha256": "0b5bccba1d241bd452151629d2b5dc72b9ef9f2c8f1192d5682d8d98eb25f17c"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/augmentors/image/normalize.py": {
+      "bytes": 1845,
+      "sha256": "35bd1aee9149d9cc23e323f5eea99fad17329ed35063c212ad15c4f619b0b1e3"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/augmentors/image/padding.py": {
+      "bytes": 3567,
+      "sha256": "1b58535c3d55738d3ee1138e7350a95543ff230c18603b4d474b4b31f9b717d7"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/augmentors/image/resize.py": {
+      "bytes": 7757,
+      "sha256": "39c182cec27c30f1c4c63798df2d99c2e975d0f25796fd62ef815626b66bdd79"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/config/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/config/schema.py": {
+      "bytes": 3079,
+      "sha256": "c2eb057812efd813265e941fcd863535d7145b36404091ae1909c2596a7e9440"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/dataloader.py": {
+      "bytes": 2584,
+      "sha256": "46382e13f278c1b7ca2cef9b8bd3d3f959e2fd94167608b79c26a510c6ccbd49"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/decoders/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/decoders/image.py": {
+      "bytes": 1344,
+      "sha256": "f540dd3ac1fab51fae1725336943e3584dc429e5cb19fe7358983a1ccc85ccd2"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/decoders/pickle.py": {
+      "bytes": 1059,
+      "sha256": "71901be5e0a3ec6da9fd4c935c91e763491e2b32c9833d2d4433f61df6e956b9"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/distributors/__init__.py": {
+      "bytes": 1147,
+      "sha256": "310176e60e75cd0691c5e225be51058a7ca010a021ecc3793611b296685793ff"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/distributors/basic.py": {
+      "bytes": 5820,
+      "sha256": "23d0565963022665be2b0b80b655d7566bec68367d840e935bda492300e7d36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/distributors/multi_aspect_ratio.py": {
+      "bytes": 11079,
+      "sha256": "d0e4d291b1949fae4f0d1f935f95b38534997fb2c5844067da274edea191af62"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/distributors/multi_aspect_ratio_v2.py": {
+      "bytes": 9978,
+      "sha256": "488a9a02154dc8ae446d3157d012bfd9588c302e23a5720ad7228ae149ef80d5"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/utils/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/utils/iterators.py": {
+      "bytes": 12099,
+      "sha256": "83de63fc6a46594d51c271d87b91e3817d7195cea2ca41a4243d715e1436e6dc"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/utils/misc.py": {
+      "bytes": 2657,
+      "sha256": "a4300a3acf5f78a7fabc5a2cd915daa144871909c5dfc07ac33eafa719cafe5f"
+    },
+    "runtime/tanhe/vendor/imaginaire/datasets/webdataset/webdataset.py": {
+      "bytes": 7728,
+      "sha256": "fd5181f06d8d51c24d2068ade5e68d3c38efbbdec614e3140a028d9557b2e7d3"
+    },
+    "runtime/tanhe/vendor/imaginaire/lazy_config/__init__.py": {
+      "bytes": 2712,
+      "sha256": "8a2878c87437d39b5388d37132b04c35527cb2497af3132a1eeb20b12ec2c74a"
+    },
+    "runtime/tanhe/vendor/imaginaire/lazy_config/file_io.py": {
+      "bytes": 1003,
+      "sha256": "0aa6993c5509c7ae9d4bcebb95274dec4c8a355b91d1b6d6ac03c4718f3a9a34"
+    },
+    "runtime/tanhe/vendor/imaginaire/lazy_config/instantiate.py": {
+      "bytes": 4337,
+      "sha256": "ca6e9b628023c8395fe7147f7b427cc292930724d12b99aef178e50c56eaba6c"
+    },
+    "runtime/tanhe/vendor/imaginaire/lazy_config/lazy.py": {
+      "bytes": 18046,
+      "sha256": "b213b6203334017b43cb6441963ef6f30b7e3a371c32e5534f25a3c291845c03"
+    },
+    "runtime/tanhe/vendor/imaginaire/lazy_config/omegaconf_patch.py": {
+      "bytes": 2616,
+      "sha256": "7db6b381808b82c58b026e8fd041077065a34621da68976322d18dd1c14e65fa"
+    },
+    "runtime/tanhe/vendor/imaginaire/lazy_config/registry.py": {
+      "bytes": 2503,
+      "sha256": "b30c21cabdff46f514c6533ba08297f0ec2d2328f65ac9ee1c771559baf29881"
+    },
+    "runtime/tanhe/vendor/imaginaire/model.py": {
+      "bytes": 5334,
+      "sha256": "b9f4242880347b845489571aa0208cdba3d582fb908c88177a0ce6775a295c4e"
+    },
+    "runtime/tanhe/vendor/imaginaire/models/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/models/vlm_qwen.py": {
+      "bytes": 41941,
+      "sha256": "b54263208947126a9d85650fec9ca6af7083582b7edbdb9be8fd2e197cff8ebc"
+    },
+    "runtime/tanhe/vendor/imaginaire/models/vlm_qwen_omni.py": {
+      "bytes": 18149,
+      "sha256": "ca0a8154732b56c1f29c1bd201fbd921d1c4bf77d4e49a15fcc4d0c560d672d4"
+    },
+    "runtime/tanhe/vendor/imaginaire/networks/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/networks/qwen2_5_vl.py": {
+      "bytes": 102500,
+      "sha256": "61a71c3f501e87932536f6def08ba149d5acc19eee1a53dd6286d9e25190af41"
+    },
+    "runtime/tanhe/vendor/imaginaire/trainer.py": {
+      "bytes": 17274,
+      "sha256": "1c761b08fc88dcf6c12b20ea1ae2988842abfbe0c1714af714c077e19bde9d32"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/callback.py": {
+      "bytes": 20229,
+      "sha256": "da554aefb7066a81a12ec2408e0aecf7f9cd6790e787a138005fa6621ee6102e"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/checkpointer.py": {
+      "bytes": 12239,
+      "sha256": "075e7cae221ebc2e9bc3030ff3a1ea0e3e1b3556df44f51b7eb0f275ea095b13"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/config_helper.py": {
+      "bytes": 8199,
+      "sha256": "e6ca6d3b362dd540be4cba80b63940f4899c1f31a3384bf368af3c587102e01c"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/device.py": {
+      "bytes": 1511,
+      "sha256": "13b9fb37ed9015ae720098cbba4586caf16c9f3a2ca5420f565a72b89c8cf950"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/distributed.py": {
+      "bytes": 17480,
+      "sha256": "90f881069c82ee18056f955b62a7289514f6ddf47a662ebd2789711ad5472d64"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/backends/__init__.py": {
+      "bytes": 1156,
+      "sha256": "4e15e05dc92c48d1844b1e0b7e8d9e8c83a6a291e5d02e08f7dd8bdc237a5ce4"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/backends/base_backend.py": {
+      "bytes": 1754,
+      "sha256": "b3220cb88f274b3bc0253492a9dcd68b84d36a809e7074906edf717c9dbcbb40"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/backends/http_backend.py": {
+      "bytes": 3064,
+      "sha256": "0f2be8aac83d74c8466fadd5bb4ac423447997ab39de9dea04fa8dc506888257"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/backends/local_backend.py": {
+      "bytes": 18372,
+      "sha256": "5a7b46210d667da7826964627954deda4e2036e883b088a8326e9b968d607b7f"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/backends/registry_utils.py": {
+      "bytes": 4525,
+      "sha256": "e3a1365595cd35da0f2da53af29d418b58408c05300d68ccf65278b90ba84b2b"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/easy_io.py": {
+      "bytes": 34217,
+      "sha256": "9fed701c7bc25ddfcba8f11af452709e8d4a2aa116280f72e22c58ae4cfbd27c"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/file_client.py": {
+      "bytes": 16324,
+      "sha256": "ca9d91b8a81c43b976f5dd213e87568c2809ef52ddc4c15b118bbb7e67326bb5"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/__init__.py": {
+      "bytes": 1199,
+      "sha256": "79cba3d702d27fbd65cb10b8351e0fe9e74d3113be20dd93037699c980fe9c38"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/base.py": {
+      "bytes": 1625,
+      "sha256": "bb13ebd90718592ddc70a83026bdd157939b445f1ea981c1284cb73c8b6eebee"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/byte_handler.py": {
+      "bytes": 1220,
+      "sha256": "1bd3596cda54fcbcd95b713348bc887213c8c96018d28bd9acad39500c990e52"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/csv_handler.py": {
+      "bytes": 1503,
+      "sha256": "eb1ea2998010e65e46f8658fe625ab31ccd203fc7976f18ba67b6914422ddc34"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/gzip_handler.py": {
+      "bytes": 1193,
+      "sha256": "843407ff61a2877439f0508094867fbe9cb1df444435758dbc742f9e32feb7d1"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/imageio_video_handler.py": {
+      "bytes": 6330,
+      "sha256": "5af0d00e302aad1dbd545b521e6045baa2268201ea014cc5ed6de7605dab685a"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/json_handler.py": {
+      "bytes": 1732,
+      "sha256": "c095e2b2ff3eacdfd8c3a5750286d00ef0540f8435e789d8d2b438b9fcb385bd"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/jsonl_handler.py": {
+      "bytes": 2863,
+      "sha256": "9438e95adc8013c3e3e82571d3eda1fd9e7cf60588f9dad54d6bc371f13f5394"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/np_handler.py": {
+      "bytes": 3058,
+      "sha256": "2616e8ae0b3e837d5d641b5708767794b44b39d9b7cfd8b8396bbf5398e52af6"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/pandas_handler.py": {
+      "bytes": 1150,
+      "sha256": "fe8c9bd1529b507154fb2d46329bf69756a471a420f44bffd780037bfad81df0"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/pickle_handler.py": {
+      "bytes": 1503,
+      "sha256": "ee335f224d84db0f27ffd8188675516cf79a4f5e3fc49a901405aa3368eb4feb"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/pil_handler.py": {
+      "bytes": 3608,
+      "sha256": "6305008ac79c8990e401b6dfac0650186b29357c6c176abba6abb6a9d5dc08c9"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/registry_utils.py": {
+      "bytes": 3459,
+      "sha256": "725d9dedd218fef221b145b6756585349c5623fa1657c3c04fbe3a9db296480c"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/tarfile_handler.py": {
+      "bytes": 1456,
+      "sha256": "2172bb7ff9625d3dde237265afc958156c42e3cb617e4daf5aeaedb1060ee3c7"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/torch_handler.py": {
+      "bytes": 1129,
+      "sha256": "05d805f72311eaf10da46bf69761636cc30ac011c90d3ab989fdbf94f0b868b7"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/torchjit_handler.py": {
+      "bytes": 1140,
+      "sha256": "4e993e85e2635c3a5c378350b0c840e2ceae66c3a1b7b01b030cad62bfed9ec7"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/txt_handler.py": {
+      "bytes": 1184,
+      "sha256": "787ff90fb3405610de5e6f6ddd1c4a3d8174fa0bebc7a6ec8e0b3f0916b0e3f5"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/easy_io/handlers/yaml_handler.py": {
+      "bytes": 1397,
+      "sha256": "5be537cf0010ba71e02faf0512bd94114760cac452238908da142e375e7a13e0"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/ema.py": {
+      "bytes": 14755,
+      "sha256": "6fb4f681931232014c86a64ad6f5c4a500cbb04b0970d017bfc69e3c443900cc"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/env_parsers/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/env_parsers/env_parser.py": {
+      "bytes": 4302,
+      "sha256": "ce0a1138fc3a5b0c9d67fe0b0275e00179abd6f699ab8c608e2ab1ca26294b88"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/fused_adam.py": {
+      "bytes": 17327,
+      "sha256": "936ac7b1528d1d44095b88389bbdb272494694f4c1f6a9809cb2dfb314121ecf"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/graph.py": {
+      "bytes": 16336,
+      "sha256": "459b5c8d81eadf094c8e60a13de08becf41044228b40899394427702f73c3df5"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/io.py": {
+      "bytes": 6977,
+      "sha256": "b2a6acf3de6887c1beb947c3626d10e852eaebda9e630a20c36660dc5291b524"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/log.py": {
+      "bytes": 4447,
+      "sha256": "445a6fa968b145a5cf76dbff0eaccba674ed01d9b026168390547f4bd34f89bd"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/misc.py": {
+      "bytes": 17278,
+      "sha256": "3b25e7128160b57e2dc4f9640d74831dc0b751b51b9422686c233ddde8d492c8"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/parallel_state_helper.py": {
+      "bytes": 1567,
+      "sha256": "d75cda1a2e77d03a8af6da39c9d7477b117d0fc54550680e5fd51cf34906863c"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/parallelism.py": {
+      "bytes": 8224,
+      "sha256": "7e3f800b10b38c514896200358c8948ec5593d51c9666de4df96cae3dba9d28d"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/profiling.py": {
+      "bytes": 5630,
+      "sha256": "76e6b98ba7a8e6130fc259a5515906fdb013327154981937d42ed39970d89f1c"
+    },
+    "runtime/tanhe/vendor/imaginaire/utils/validator.py": {
+      "bytes": 17192,
+      "sha256": "ee2a240fd980d9cc844a149bc34a2b73fc036523c7cae6a49f4b20835cbcb13e"
+    },
+    "runtime/tanhe/vendor/imaginaire/visualize/__init__.py": {
+      "bytes": 679,
+      "sha256": "dd7d5f5e544e1d2923bf4f1aa548504255938f58a6e74a119356573e6ce9e36e"
+    },
+    "runtime/tanhe/vendor/imaginaire/visualize/video.py": {
+      "bytes": 3472,
+      "sha256": "5b1c129c38dd95a9aa589def8703fe63c1baae14277e8b0f76b5cddcd3bf56fa"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/__init__.py": {
+      "bytes": 387,
+      "sha256": "5e4f5cfbac00300eed15740633433b714f737461d8e7cf11495c39a45210d7b9"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/adapters.py": {
+      "bytes": 9311,
+      "sha256": "7fbaae36c5f7c0f94b41d16210ef15f2673d691b59d1bbdf95f5f792234fef27"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/adapters_temporal.py": {
+      "bytes": 3895,
+      "sha256": "b534f03d1dbe6b57c55f21660ddf80c4458e2f562ce8e09dfb999c6034f895f1"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/b_tmv_crossview.py": {
+      "bytes": 42819,
+      "sha256": "fe8899a633eff01a54be174fa677c424637163125830c14899089f189bda5fe2"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/b_tmv_geometry.py": {
+      "bytes": 14223,
+      "sha256": "3d3556fad123416ee3e6555feb2260cb48ceb4f19521845573668f5a91cdeb68"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/b_tmv_routing.py": {
+      "bytes": 7929,
+      "sha256": "ad0d3ea141c13e46ef3d29c7a41e584bbea9b81bf55dd791265c6a2c0e0be196"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/b_tmv_warm.py": {
+      "bytes": 20945,
+      "sha256": "e57c2b38aad641e713192bffe6ea744b1e936dd50bcaa0efb02062591501c4d9"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/build.py": {
+      "bytes": 1672,
+      "sha256": "868b2b77c35243b709c38339b43f57df68d9fc1c65cf1c5d470bee62e18ce6b2"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/build_temporal.py": {
+      "bytes": 2018,
+      "sha256": "72069be0e67d99104c26374b72d44172fd97f8aa8023217d6226a033083bb2da"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/checkpoint.py": {
+      "bytes": 13064,
+      "sha256": "99095ca22ea380f40b33f0b6dd01a60adb174b0a96cc5d484390426a3c58537e"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/config.py": {
+      "bytes": 3179,
+      "sha256": "c20edad284d8f020155f5a064c778aade5489947d45af785f9528670fbff1d82"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/config_temporal.py": {
+      "bytes": 3855,
+      "sha256": "955f4262e7bc0459b6aa46e1c8fd77d3a9b77a93d4f5c7144d283293e54815c5"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/constants.py": {
+      "bytes": 1573,
+      "sha256": "cce04caf656505307883fc6d1caef19faab47ae9fc5981c9372e30ee16607b6f"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/data/__init__.py": {
+      "bytes": 351,
+      "sha256": "270d879bd495e1c7d445e221b125c4cfc9197247ca7744d45bc1a7162f6ca170"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/data/nusc_pair_temporal.py": {
+      "bytes": 18874,
+      "sha256": "1178270edb88e16643d520deba5a8cee7df5c1960fd68500cf482fe76c320573"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/dit_a.py": {
+      "bytes": 7767,
+      "sha256": "a7c5c55fef8420fbc072d69c71b218cdb3fda52c9d49041e42fa21d21e69998c"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/dit_a_temporal.py": {
+      "bytes": 18165,
+      "sha256": "d650f2c03eefe56bd9ac1e353df98ab296cba190647ad834998dd28b98a01708"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/dit_b.py": {
+      "bytes": 6080,
+      "sha256": "9c0816d82e266284d667bbb18d0c5e6cb68abe8a93e7e13a7a2818a5ae7c0f54"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/dit_b_warm.py": {
+      "bytes": 14761,
+      "sha256": "7a1289e12b42d7b8eb876931decb51c3293d71325a83354ada9a9597cd890fd5"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/dit_utils.py": {
+      "bytes": 2421,
+      "sha256": "539e2291a1b2b023bbda99113a17f2b005d6841821ca52457a9b7f4ae30f2193"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/factory.py": {
+      "bytes": 5430,
+      "sha256": "a147b10f8f85ba9c785facdd5210c08421a2161525b76a9ca5bb98600f5b2d39"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/factory_b_tmv.py": {
+      "bytes": 14426,
+      "sha256": "019be12b9dda68a1446e8ee5733d02499d7d7e454dbe54b53ff1c96a607b5205"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/factory_temporal.py": {
+      "bytes": 2519,
+      "sha256": "87cd0390bb168bbe85410e8df487242c05abeca794d821cb8167dfc98ea12a70"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/history.py": {
+      "bytes": 20096,
+      "sha256": "d4699a418a11027e6f202b2efa44915d93d3572aab10d42c7734d8846ab425ad"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/layout.py": {
+      "bytes": 6176,
+      "sha256": "bfa2edf9897899f9b3c185e4f607a456675bc70fa9d9ed3f48bfbee37edf63bd"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/layout_temporal.py": {
+      "bytes": 9109,
+      "sha256": "adc4aa937b38273ec9f584652ac05ec0d5ae332b90ea7eb48c67ccb3fae2a9e6"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/losses_temporal.py": {
+      "bytes": 1998,
+      "sha256": "4b3a2c61b6d001c41ab0793a4ef13d0c57dfb896cdbd6163db3f756e22567294"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/plucker.py": {
+      "bytes": 5506,
+      "sha256": "1e0911a598d9c99895100903f0ce84d104e393f0e4a580a7971cfba1320c5af4"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/plucker_state.py": {
+      "bytes": 9226,
+      "sha256": "9a38138367a042ce5e11647f8a3fb8e4622c9cede844bb1c0f2ce77e411f16f5"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/runtime_contract.py": {
+      "bytes": 1459,
+      "sha256": "2e731a866e3124abb78b5d40bb91be25973cc24d2174bf242f7b361a42175bd2"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/state.py": {
+      "bytes": 11066,
+      "sha256": "23dd344e2475bc2c33166be19d27dc1b2e476357147b0217b37553912eff622a"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/state_b_tmv.py": {
+      "bytes": 26233,
+      "sha256": "73750cb42c9080ec443a5b1bd8ddbd8c17842c4ece18187f112375f4d7cf528c"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/state_temporal.py": {
+      "bytes": 39892,
+      "sha256": "6a0b68004d7555d76cc4fd22a2f693f4178802cf0231342b9bf133757ccbc970"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/tokenizer_utils.py": {
+      "bytes": 1292,
+      "sha256": "d908eed10a37c594a0ef254553fabe03ed3e8dbd520e5c91a3dcfa2ea020b055"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/wrapper.py": {
+      "bytes": 7059,
+      "sha256": "529044cd16f789feefeebb24da1a3ceebb5e678a4991b225faedb295ae2d2fff"
+    },
+    "runtime/tanhe/vendor/multiview_harmonizer/wrapper_temporal.py": {
+      "bytes": 17159,
+      "sha256": "2b916ae18d2c8747897284dc9256fa17b4d2a57705194e7a3da275fc430d3058"
+    },
+    "runtime/tanhe/vendor/vae_memory.py": {
+      "bytes": 2695,
+      "sha256": "0c700072db940222dfa373f152d9f671729962a11c13bcb98d6fee4782194fe7"
+    },
+    "runtime/tanhe/vendor_origin_sha256.json": {
+      "bytes": 32269,
+      "sha256": "78eae801abd4cbcf62e4abef1824c0f575773876587c03bd5dfd51ecb6301e0a"
+    },
+    "scripts/check_injection_runtime.py": {
+      "bytes": 2745,
+      "sha256": "654572355891d02a5f16f420ad54efc07e1a0d01c7770dbabf8528fcda06cec5"
+    },
+    "scripts/check_tanhe_runtime.py": {
+      "bytes": 1517,
+      "sha256": "0a4d4dd669b9601f8043cb42cdb214f4abc24999283944cad0f55367b9bdbd4f"
+    },
+    "scripts/configure.py": {
+      "bytes": 1684,
+      "sha256": "5fa74b76ca8f1a5b6790efce84262196efab5b6db5df78851090788a207929d4"
+    },
+    "scripts/export_sixcam_validation.py": {
+      "bytes": 4998,
+      "sha256": "8bd67b084ccbf40920da6f850ebbebe23ab22792db4002a897d8930a1a92d9af"
+    },
+    "scripts/infer_bidirectional.py": {
+      "bytes": 4523,
+      "sha256": "3bfe3bb7d9102e2c4df4a09e72045dae3475d736d419773b55de5895a26fc8df"
+    },
+    "scripts/infer_comparison.py": {
+      "bytes": 9615,
+      "sha256": "9cab7f329bc66a639e59bdacb81a70dc8a31f2b39ae00847b0efc643a0e1a405"
+    },
+    "scripts/install_environment.sh": {
+      "bytes": 599,
+      "sha256": "56b1f502a3890d21ce5ec5456fa286bea0b0dc5e539e2bdb23e0516ecf205b88"
+    },
+    "scripts/install_tanhe_dependencies.sh": {
+      "bytes": 1767,
+      "sha256": "0aed33f456e3bfde41c393fc15f6883d689b0f73a22e83a0fe5aa188838165db"
+    },
+    "scripts/launch_comparison.py": {
+      "bytes": 2883,
+      "sha256": "2c469b2643dcfd492871c09d4cae26cd24a6e535fea7fe3f745c00a955e98db0"
+    },
+    "scripts/lazy_text_encoder.patch": {
+      "bytes": 1398,
+      "sha256": "c69af6c120bcb5fc2f8bc655baa68177897de027a9fc66ab848d8695a58b8b4e"
+    },
+    "scripts/pipeline.py": {
+      "bytes": 1047,
+      "sha256": "9c6e780415b35f41035831943b0da3e83a554b88b4c71d89c084168682d468fc"
+    },
+    "scripts/prepare_comparison.py": {
+      "bytes": 5772,
+      "sha256": "e6125c383f1b583a957b952531f3ad44e3aaeb0679cebc9fb2297120f5f2b307"
+    },
+    "scripts/prepare_data.py": {
+      "bytes": 8861,
+      "sha256": "c62800527c47024054d02961aa335cb5608ee71e41aa7c294bbc2c723d905a53"
+    },
+    "scripts/prepare_sixcam_validation.py": {
+      "bytes": 4088,
+      "sha256": "209eea9c38f5263d2dde7fc96fca1b240f3115b89d149637ea0676d7370ce81e"
+    },
+    "scripts/probe_sixcam_permutation.py": {
+      "bytes": 1808,
+      "sha256": "f2354d08f693bbb4cc4bd6fa53627596c964d73b446a5b2eba842bad5e904079"
+    },
+    "scripts/restore_assets.py": {
+      "bytes": 2421,
+      "sha256": "1b7942bcc66e50378fabf0705a28faa33f5a99a0bfd1299cce180041730e9eb1"
+    },
+    "scripts/restore_tanhe_data.py": {
+      "bytes": 2272,
+      "sha256": "f29a01dfd18112ebdba5d6fae5163d654f676dcfc8827b93c71e24cff9eb7a57"
+    },
+    "scripts/resume_training.py": {
+      "bytes": 1320,
+      "sha256": "9ef11333e2a55a4dddd3378f2c5854fa8763995b74bf703f3a06b178120d982b"
+    },
+    "scripts/run_experiment.py": {
+      "bytes": 6561,
+      "sha256": "2ebe8ff65a6f44c1970b3e7658788ab25aad726aa9d76e868edace7455b3244d"
+    },
+    "scripts/run_injection.py": {
+      "bytes": 8592,
+      "sha256": "f14c7c25c600704e715c0d5c23af7a39c97040778e6a28f54833a04934fc386b"
+    },
+    "scripts/run_sixcam_validation.py": {
+      "bytes": 5350,
+      "sha256": "51defccc956237b928b6f71febdf415e0f4a5c45b19635bcd743da8e56bf54df"
+    },
+    "scripts/run_tanhe_validation.py": {
+      "bytes": 4290,
+      "sha256": "a96d04b6e73704792b6141d8ca4b683a5be078229b2e106a6db8058175c7705f"
+    },
+    "scripts/summarize_sixcam_validation.py": {
+      "bytes": 3943,
+      "sha256": "fe7dd36fd83f2dc95fd57870e3866cbb356a7ff30245a8af5e2b85478e9d7eae"
+    },
+    "scripts/train.py": {
+      "bytes": 14115,
+      "sha256": "180de02bdd7ffc5dfd65a22a4379ae431a2866478fe08828a29be9e12d911910"
+    },
+    "scripts/train_bidirectional.py": {
+      "bytes": 16958,
+      "sha256": "571a89a4cba308537da5a4c30814adc82cc2952f602f73e08612fc2d3aa8a506"
+    },
+    "scripts/train_injection.py": {
+      "bytes": 14801,
+      "sha256": "73b9762e7f5efb9f5127bead766dec163a21800628d20dd560ef770594901616"
+    },
+    "scripts/train_tanhe.py": {
+      "bytes": 15610,
+      "sha256": "ca5a697d8fba4f579ca6cccb827c0674d8ee42dd761c326633a7edc2bdad6ddf"
+    },
+    "scripts/validate_sixcam.py": {
+      "bytes": 7041,
+      "sha256": "759d4e77dbafc1110c8fbfcaa191b292bfafebfa331eb0a0c3dbe0cb1fa69fdb"
+    },
+    "tests/test_injection.py": {
+      "bytes": 15958,
+      "sha256": "4de1f04c9ab2ed160229000f59fe2a2f3ba5b1963d49fe7e1ac4cbb419f1ce1d"
+    },
+    "whole_data/configs/bidirectional.json": {
+      "bytes": 13442,
+      "sha256": "e74f91a821ef9861e27fdf232c42196c94bc57f6fa9b1090b4f4a8cd766f7957"
+    },
+    "whole_data/evaluate.py": {
+      "bytes": 17130,
+      "sha256": "3cb3f9a4d2e7a73b587473e1f928e4ce2fa456f4fed90384330f88e5fffbdd69"
+    },
+    "whole_data/prepare.py": {
+      "bytes": 19114,
+      "sha256": "0bd53f3bbfcc4b4787d5e9922d8d38fef41982b11ef27713cbf9995c23dca45d"
+    },
+    "whole_data/processed/DATA_INTEGRITY.json": {
+      "bytes": 406,
+      "sha256": "34e8068d78762b1026e16099a710ea55f4503e3108595d26e1a221a5b6c09405"
+    },
+    "whole_data/processed/DATA_REPORT.json": {
+      "bytes": 1686,
+      "sha256": "d3c60bdde37862bfac3a2c6ab67e1a387ba744abe0a29d0e4835f6b90e8e653a"
+    },
+    "whole_data/processed/MASK_INTEGRITY.json": {
+      "bytes": 179,
+      "sha256": "b153d5b4fd2b76a7d7a8d31942b8c171d561de1c40ac8fb01d0ea40ae3c785bf"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/LAUNCH.json": {
+      "bytes": 1230,
+      "sha256": "2377164499b5cb6d689149bdd9e730d522dd03df3c635faad4c42316e4581b65"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/RESULT.json": {
+      "bytes": 1560,
+      "sha256": "25595f4f4cef0151c6756ef1a0b229b76133614b8b58f29f6730ec17319717c2"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/STATUS.json": {
+      "bytes": 533,
+      "sha256": "70a859cefcd1dac25077338395342c8801b2e224a76f65676b7a76ed47622586"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/config.json": {
+      "bytes": 14111,
+      "sha256": "dde382745782d249096fa1d4d973ea3763de086e1b9d989baaa796554befb095"
+    },
+    "whole_data/runs/training_restart_20261024/bidirectional/train.log": {
+      "bytes": 570734,
+      "sha256": "a1323fbc2a4ce5fc4eb70f60070ec3d7db86b245dd7256120ec40883a7b94817"
+    },
+    "whole_data/runtime/training_restart_20261024/ACTUAL_CHECKPOINT_VALIDATION.json": {
+      "bytes": 233,
+      "sha256": "c292806957cff1c62fd768bf151765265cc181c41ed4d96e09b186ef19e710f6"
+    },
+    "whole_data/runtime/training_restart_20261024/CHECKPOINT_FIX_TEST.json": {
+      "bytes": 220,
+      "sha256": "8b2f879efb25ed295acf7cb54763067fc5e78b266fef4a30ee5d4a8b4cada437"
+    },
+    "whole_data/runtime/training_restart_20261024/MANIFEST.json": {
+      "bytes": 1217,
+      "sha256": "acff5530aa455b55959311389a406510ec93b70673b3e7108063bc75b075f7e1"
+    },
+    "whole_data/runtime/training_restart_20261024/test_checkpoint_fix.py": {
+      "bytes": 1915,
+      "sha256": "aa614276aedd977d847ca68e6816c253f7ff15b5d37d0f204193ee1147c40604"
+    },
+    "whole_data/runtime/training_restart_20261024/train_tanhe_checkpoint_fix.py": {
+      "bytes": 16959,
+      "sha256": "76cd2d02e2fa5c6691c7f8c5d5d9f1aa3c2119eb0730f670e45ea36fead0b889"
+    },
+    "whole_data/verify.py": {
+      "bytes": 3520,
+      "sha256": "999819763e2b3db5e3675273842c146c7ccf9320c0d13abbd5caddcf1b54ac5b"
+    },
+    "whole_data/verify_masks.py": {
+      "bytes": 2297,
+      "sha256": "46644ee54b67c462e0a393385736e1ae9c3fa162564520fa90a9fbb7ffb08f38"
+    }
+  }
+}
